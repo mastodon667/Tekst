@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  4 MAR 2016 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  9 MAR 2016 18:04
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
@@ -658,46 +658,74 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count154
 )
+("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
+s.sty"
+\lst@mode=\count155
+\lst@gtempboxa=\box29
+\lst@token=\toks26
+\lst@length=\count156
+\lst@currlwidth=\dimen156
+\lst@column=\count157
+\lst@pos=\count158
+\lst@lostspace=\dimen157
+\lst@width=\dimen158
+\lst@newlines=\count159
+\lst@lineno=\count160
+\lst@maxwidth=\dimen159
+
+("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc
+.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count161
+\lst@skipnumbers=\count162
+\lst@framebox=\box30
+)
+("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
+s.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.st
 y"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count155
+\c@lips@count=\count163
 ) (Thesistekst.aux (intro.aux) (relatedwork.aux) (concept.aux)
 (implementation.aux) (evaluation.aux) (conclusion.aux) (app-A.aux) (app-n.aux))
 \openout1 = `Thesistekst.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 50.
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
-\scratchdimen=\dimen156
-\scratchbox=\box29
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen157
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count164
+\scratchdimen=\dimen160
+\scratchbox=\box31
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen161
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks28
 )
 
 ******************************************************
@@ -719,7 +747,7 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-LaTeX Info: Redefining \microtypecontext on input line 49.
+LaTeX Info: Redefining \microtypecontext on input line 50.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -735,8 +763,8 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 49.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 50.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref
 .sty"
@@ -746,47 +774,48 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 tlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count170
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 49.
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 (Thesistekst.out) (Thesistekst.out)
 \@outlinefile=\write4
 \openout4 = `Thesistekst.out'.
 
+\c@lstlisting=\count171
 Package microtype Info: Loading generic settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=79, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=83, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
-Package pdftex.def Info: logokuleng.pdf used on input line 49.
+Package pdftex.def Info: logokuleng.pdf used on input line 50.
 (pdftex.def)             Requested size: 159.33542pt x 85.3617pt.
  [-1
 
 
 {C:/Users/Herbert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
 Herbert/School/KUL/Master/Thesis/TeX/tex/latex/kulemt/logokuleng.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 50.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
 
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 49.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 50.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 50.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -835,7 +864,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-Overfull \hbox (0.86812pt too wide) in paragraph at lines 96--96
+Overfull \hbox (0.86812pt too wide) in paragraph at lines 97--97
 []|\T1/lmr/m/n/10.95 (-20) ``The Answer to the Ultimate Question of Life, the U
 niverse, and Everything''
  []
@@ -876,43 +905,45 @@ Package microtype Info: Character `029' is missing
 
 
 
-] [7]) [8]
+] [7] [8]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 59.
+) [9]
 \openout2 = `evaluation.aux'.
 
- (evaluation.tex) [9
+ (evaluation.tex [10
 
 
 
-]
+]) [11]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [10
+ (conclusion.tex [12
 
 
 
-])
-[11] [12
+]) [13] [14
 
 
-] [13] [14]
+] [15] [16]
 \openout2 = `app-A.aux'.
 
- (app-A.tex) [15
+ (app-A.tex) [17
 
 
 ]
 \openout2 = `app-n.aux'.
 
- (app-n.tex [16
+ (app-n.tex [18
 
 
 
-] [17]) [18]
-(Thesistekst.bbl) [19
+] [19]) [20]
+(Thesistekst.bbl) [21
 
 
 
-] [20
+] [22
 
 ]
 \tf@toc=\write5
@@ -924,25 +955,25 @@ Package microtype Info: Character `029' is missing
 \tf@lot=\write7
 \openout7 = `Thesistekst.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (Thesistekst.aux (intro.aux) (relatedwork.aux)
 (concept.aux) (implementation.aux) (evaluation.aux) (conclusion.aux) (app-A.aux
 ) (app-n.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `Thesistekst.out' has not changed.
-(rerunfilecheck)             Checksum: 684B01FC62AA12E6C88603F30910A245;1025.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+(rerunfilecheck)             Checksum: 71F848958169813290A1EBA9AD89F6B6;1093.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 11760 strings out of 493634
- 176690 string characters out of 3134423
- 443075 words of memory out of 3000000
- 14793 multiletter control sequences out of 15000+200000
- 73079 words of font info for 91 fonts, out of 3000000 for 9000
+ 13378 strings out of 493634
+ 198019 string characters out of 3134423
+ 465893 words of memory out of 3000000
+ 16377 multiletter control sequences out of 15000+200000
+ 73328 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,11n,35p,770b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,35p,770b,1045s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athit.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
@@ -961,9 +992,9 @@ rs/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><
 C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 b8a.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/hel
 vetic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (28 pages, 278341 bytes).
+Output written on Thesistekst.pdf (30 pages, 288665 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 19102 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 19110 words of extra memory for PDF output out of 20736 (max. 10000000)
 

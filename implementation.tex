@@ -49,23 +49,21 @@ Conflict explanation wil zeggen een verklaring zoeken waarom een bepaalde select
 IDP gebruikt momenteel twee technieken om oorzaken van onsatisfieerbaarheid op te sporen. De unsatstructure spoort de set van variabelen op die het probleem veroorzaken. Vervolgens is er de unsatcore, die zoekt naar de kleinste set van regels uit de theorie die niet waar gemaakt kunnen worden.
 
 \subsubsection{Unsatstructure}
-De unsatstructure is een efficiënte tool om aan de gebruiker te kunnen meedelen, welke van de voormalige selecties problemen veroorzaken. In ons voorbeeld van het ISP kan de gebruiker enkel de keuze maken om een dag te volgen in een bepaalde fase (te kiezen uit de lijst van mogelijke waarden) of kan hij/zij aangeven om een vak niet te volgen. 
+De unsatstructure is een effici\"{e}nte tool om aan de gebruiker te kunnen meedelen, welke van de voormalige selecties problemen veroorzaken. In ons voorbeeld van het ISP kan de gebruiker enkel de keuze maken om een dag te volgen in een bepaalde fase (te kiezen uit de lijst van mogelijke waarden) of kan hij/zij aangeven om een vak niet te volgen. 
 Bij een slechte selectie zal de unsatstructure de vakken oplijsten samen met de selectie die de gebruiker ervoor gemaakt heeft, en dit enkel voor de vakken waarvoor de selectie bijdragen tot de onsatisfieerbaarheid. De gebruiker krijgt hier dan de mogelijkheid om voor deze vakken de voorheen gemaakte keuze ongedaan te maken of te veranderen. 
 
 \subsubsection{Reified Constraints}
 Wat opvalt is dat de voorgaande techniek enkel een verzameling selecties teruggeeft die bijdragen tot het probleem. Maar verdere uitleg over welke regel(s) uit de theorie niet meer waar gemaakt kunnen worden en waarom wordt niet gegeven. Dus de gebruiker kan niet weten wat er moet veranderen. 
 Herinner de unsatcore zoekt achter de kleinste set van regels uit de theorie die niet meer waar gemaakt kunnen worden. En hoewel dit hetgene is dat we willen weten, is er toch nog een probleem. 
 De IDP syntax is voor de doorsnee programmeur goed te lezen, maar voor een doorsnee gebruiker die niets van programmeren afweet zal dit ongetwijfeld als chinees overkomen. Neem als voorbeeld onderstaande regel, elke student computerwetenschappen zal vrij snel kunnen achterhalen wat de regel inhoud. Maar personen zonder deze achtergrond zullen dit niet kunnen verstaan.
-
-\begin{lstlisting}[mathescape]
+\begin{lstlisting}[mathescape, caption=IDP Rule Example, frame=topline/bottomline]
 $\forall$vg[VakGroep] : IsType(vg,AVO) $\Rightarrow$ GesAantalStupunVakGr(vg) 
 = sum{v[Vak], sp[Studiepunten],f[Fase] : InVakGroep(v,vg) 
 $\wedge$ Geselecteerd(v,f) $\wedge$ AantalStudiepunten(v)=sp : sp }.
 \end{lstlisting}
-
 We proberen dit probleem deels te overbruggen d.m.v. reified constraints. Hierbij koppelen we de waarheidswaarde van een regel (constraint) uit de theorie aan een boolean variabele. Nemen we terug onze regel van voorbeeld 1.
 \begin{lstlisting}[mathescape]
-C $\equivalent$ A $\wedge$ B
+C $\Leftrightarrow$ A $\wedge$ B
 
 $\neg$ A
 \end{lstlisting}

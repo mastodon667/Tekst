@@ -28,13 +28,16 @@
 \contentsline {subsection}{\numberline {4.2.1}Kivy}{8}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Grafische Gebruikersinterface}{8}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Communicatie tussen Front- en Back-end}{8}{subsection.4.2.3}
-\contentsline {chapter}{\chapternumberline {5}Evaluation}{9}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{11}{chapter.6}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{15}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{17}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{17}{section.B.1}
-\contentsline {section}{\numberline {B.2}Lorem 25-27}{18}{section.B.2}
-\contentsline {chapter}{Bibliography}{19}{section*.12}
+\contentsline {section}{\numberline {4.3}Conflixt Explanation}{8}{section.4.3}
+\contentsline {subsubsection}{Unsatstructure}{9}{section*.11}
+\contentsline {subsubsection}{Reified Constraints}{9}{section*.12}
+\contentsline {chapter}{\chapternumberline {5}Evaluation}{11}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{13}{chapter.6}
+\contentsline {appendix}{\chapternumberline {A}The First Appendix}{17}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{19}{appendix.B}
+\contentsline {section}{\numberline {B.1}Lorem 20-24}{19}{section.B.1}
+\contentsline {section}{\numberline {B.2}Lorem 25-27}{20}{section.B.2}
+\contentsline {chapter}{Bibliography}{21}{section*.14}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
