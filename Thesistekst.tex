@@ -1,0 +1,126 @@
+\documentclass[master=elt,masteroption=eg,english]{kulemt}
+\setup{title={The ISP Course Selection Puzzle},
+  author={Herbert Gorissen},
+  promotor={Prof.\ Gerda Janssens},
+  assessor={},
+  assistant={Matthias van der Hallen}}
+% The following \setup may be removed entirely if no filing card is wanted
+\setup{filingcard,
+  translatedtitle=The ISP Course Selection Puzzle,
+  udc=621.3,
+  shortabstract={Here comes a very short abstract, containing no more than 500
+    words. \LaTeX\ commands can be used here. Blank lines (or the command
+    \texttt{\string\pa r}) are not allowed!
+    \endgraf}}
+% Uncomment the next line for generating the cover page
+%\setup{coverpageonly}
+% Uncomment the next \setup to generate only the first pages (e.g., if you
+% are a Word user.
+%\setup{frontpagesonly}
+
+%\begin{figure}
+%  \centering
+%  \includegraphics{logokul}
+%  \caption{The KU~Leuven logo.}
+%  \label{fig:logo}
+%\end{figure}
+
+% Choose the main text font (e.g., Latin Modern)
+\setup{font=lm}
+
+% If you want to include other LaTeX packages, do it here. 
+
+% Finally the hyperref package is used for pdf files.
+% This can be commented out for printed versions.
+\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setcitestyle{authoryear}
+
+%%%%%%%
+% The lipsum package is used to generate random text.
+% You never need this in a real master thesis text!
+\IfFileExists{lipsum.sty}%
+ {\usepackage{lipsum}\setlipsumdefault{11-13}}%
+ {\newcommand{\lipsum}[1][11-13]{\par And some text: lipsum ##1.\par}}
+%%%%%%%
+
+%\includeonly{chap-n}
+\begin{document}
+
+\begin{preface}
+  
+\end{preface}
+
+\tableofcontents*
+
+\begin{abstract}
+Bij de start van een opleiding aan de KU Leuven is iedere toekomstige student verplicht zijn of haar opleiding samen te stellen uit een hele waaier aan opleidingsonderdelen. De selectie van opleidingsonderdelen is echter onderworpen aan een set van regels die allemaal voldaan moeten zijn wil men een geldig individueel studieprogramma (ISP) bekomen. Het ISP maakt deel uit van een specifieke groep van problemen genaamd emph{configuratie problemen}.
+
+Het IDP systeem ontwikkeld aan de KU Leuven laat toe domein specifieke kennis uit te drukken in FO(\textperiodcentered), een uitbreiding op eerste orde logica, ook wel de theorie genoemd. Eens de kennis beschreven is kan men met het bijhorende IDP systeem verscheidene vormen van inferentie toepassen op de theorie. 
+
+IDP als kennis representatie systeem is ideaal voor het beschrijven van en later redeneren over configuratie problemen. In het verleden heeft men er al grote configuratie problemen uit de bedrijfswereld succesvol mee kunnen beschrijven en oplossen. Interessant is om te achterhalen of we dit voor het ISP selectie probleem ook kunnen doen. 
+
+Momenteel zijn er bij het opstellen van het ISP ook een aantal tekortkomingen die we met IDP zouden willen oplossen. Zo wordt het lessenrooster niet mee in rekening gebracht, waardoor studenten niet weten of ze opleidingsonderdelen opnemen waarvan de lessen mogelijk kunnen overlappen. En wat als er een foutieve selectie wordt gemaakt? Momenteel krijgt de student na het bevestigen van diens selectie een foutmelding en deze is vaak nog onduidelijk. IDP voorziet momenteel een aantal functies om de oorzaken van inconsistentie op te sporen at run-time. Handig zou zijn om hiermee korter op de bal te spelen en meteen bij een foutieve selectie uitleg te kunnen geven waarom de voorlopige huidige selectie niet correct is en hoe men dit kan oplossen.
+
+Naast dit alles heeft deze thesis nog een andere grote doelstelling. Het opsporen van oorzaken van inconsistenties ofwel conflict explanation genoemd is een gebied waar momenteel nog veel onderzoek gaande is. Enkele interessante technieken zijn hier al voorgelegd en het is in onze interesse om na te gaan of en hoe we deze kunnen integreren in het IDP systeem.
+\end{abstract}
+
+% A list of figures and tables is optional
+%\listoffigures
+%\listoftables
+% If you only have a few figures and tables you can use the following instead
+\listoffiguresandtables
+% The list of symbols is also optional.
+% This list must be created manually, e.g., as follows:
+\chapter{List of Abbreviations and Symbols}
+\section*{Abbreviations}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    LoG   & Laplacian-of-Gaussian \\
+    MSE   & Mean Square error \\
+    PSNR  & Peak Signal-to-Noise ratio \\
+  \end{tabularx}
+\end{flushleft}
+\section*{Symbols}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    42    & ``The Answer to the Ultimate Question of Life, the Universe,
+            and Everything'' according to \\
+    $c$   & Speed of light \\
+    $E$   & Energy \\
+    $m$   & Mass \\
+    $\pi$ & The number pi \\
+  \end{tabularx}
+\end{flushleft}
+
+% Now comes the main text
+\mainmatter
+
+\include{intro}
+\include{relatedwork}
+\include{concept}
+\include{implementation}
+\include{evaluation}
+\include{conclusion}
+
+% If you have appendices:
+\appendixpage*          % if wanted
+\appendix
+\include{app-A}
+% ... and so on until
+\include{app-n}
+
+\backmatter
+% The bibliography comes after the appendices.
+% You can replace the standard "abbrv" bibliography style by another one.
+\bibliography{references}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

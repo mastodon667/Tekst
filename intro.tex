@@ -1,0 +1,28 @@
+\chapter{Introduction}
+\label{cha:intro}
+
+\section{Probleemstelling}
+
+\subsection{Interactive Configuration Problems}
+- csp's beschrijven
+- ic beschrijven
+- imperatieve/obj. georienteerde methoden + nadelen
+- declaratieve methoden + voordelen/nadelen
+- kr-paradigma + voordelen
+
+\subsection{Individueel Studieprogramma}
+Een ISP samentstellen valt onder deze categorie van Interactieve Configuratieproblemen. 
+De gebruiker, in dit geval een toekomstige student wil een geldig ISP bekomen d.m.v. het selecteren van mogelijke opleidingsonderdelen. Maar de student kan niet zomaar elk opleidingsonderdeel selecteren, er zijn een heleboel regels waaraan de selectie moet voldoen. 
+
+\section{Doel}
+In deze thesis willen we onderzoeken of de regels van het ISP effici\"{e}nt kunnen beschreven worden in FO(\textperiodcentered). Met de bedoeling dat voor eender welke opleiding binnen de K.U. Leuven deze set van regels een geldige opleiding kunnen beschrijven. 
+
+Vervolgens willen we kijken of we met deze theorie verschillende vormen van inferentie kunnen doen en hoe efficient deze gebeuren. Met behulp van een zelf ontworpen front-end (incl. grafische interface) willen we nagaan of de gebruiker een geldig ISP kan selecteren, kan laten samenstellen enz. En of al deze functionaliteiten in real-time kunnen uitgevoerd worden.
+
+Momenteel wordt het lessenrooster niet in acht genomen tijdens het selectieproces. Dit wil zeggen dat de student dus ook geen idee heeft of de door hem/haar geselecteerde opleidingsonderdelen mogelijk lesmomenten bevatten die overlappen. 
+Hier is het de bedoeling om de gebruiker een overzicht te geven van het lessenrooster voor elke stap in het selectieproces. En daarboven het beste lessenrooster te laten genereren waarbij er zo weinig mogelijk overlappende lessen zijn.
+
+In het geval van een ongeldige selectie biedt IDP een aantal mogelijkheden om aan de gebruiker duidelijk te maken wat er juist mis is gegaan. De \emph{unsatcore} zoekt naar de minimale set van regels die ongeldig zijn voor de huidige selectie. Een andere optie is de \emph{unsatstructure} die de kleinste set van variabelen wordt gezocht waarbij als 
+men de geselecteerde waarden voor deze variabelen ongedaan maakt, de selectie niet langer ongeldig is. 
+Maar om een duidelijk verklaring te verkrijgen waarom de selectie fout is, in een formaat dat elke persoon kan begrijpen bestaat er in IDP momenteel nog niets. Daarom willen we onderzoeken of we dit kunnen realiseren.
+

@@ -1,0 +1,73 @@
+\chapter{Implementation}
+\label{cha:implementation}
+
+\section{IDP Knowledge base}
+
+\subsection{Theorie van het ISP}
+Geen opleiding aan de KU Leuven is dezelfde, de opleidingsonderdelen verschillen net zoals de vakgroepen waar ze deel van uitmaken. Voor sommige vakgroepen ben je verplicht alle onderdelen op te nemen, terwijl je voor andere en minimaal (of zelfs maximaal) aantal studiepunten ervan moet opnemen. Kortom de regels binnen \'{e}\'{e}nzelfde opleiding zijn niet zo moeilijk om te beschrijven, maar om dit te veralgemenen en een theorie te cre\"{e}ren die voor alle opleidingen een geldig ISP kan beschrijven dat is een andere paar mouwen. Voor het gemak van de lezer noemen we opleidingsonderdelen vanaf nu vakken.
+
+Om te beginnen is het belangrijk om structuren te vinden die ongeacht de opleiding of opleidingsonderdeel telkens hetzelfde zijn.
+
+\subsubsection{Vakken}
+Een vak is een simpel type dat altijd dezelfde eigenschappen heeft vertoond. Het heeft een unieke vakcode met daaraan een naam gekoppeld. Het telt een aantal studiepunten dat de werklast beschrijft.
+Een opleiding kan kan bestaan uit \'{e}\'{e}n of meerdere fases, en voor elk vak is er bepaald in welke fase(s) van de opleiding je het kan volgen. let wel je kan een vak per opleiding maar \'{e}\'{e}n keer volgen. 
+En tenslotte valt elk vak oftwel in het eerste, tweede of beide semesters (in dit laatste geval noemt men het een jaarvak).
+
+\subsubsection{Vakgroeptypes}
+Zo valt op dat we telkens dezelfde \textbf{types} van \emph{vakgroepen} tegenkomen. 
+Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan.
+Zo is elke opleiding op zich eeen vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen.
+Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt.
+Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. 
+Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan.
+En ten slotte is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
+
+Deze types zijn we het vaakst voorkomen, en kunnen ongeacht de opleiding met dezelfde set van regels beschreven worden. Het is mogelijk dat sommige types van vakgroepen niet telkens voorkomen, en dus de regels ook niet van kracht zijn. In een bacheloropleiding zal bijvoorbeeld nooit een vakgroep voorkomen van het type Bachelor verbrendend pakket. 
+
+\subsection{Theorie van het lessenrooster}
+
+\section{Front-End}
+
+\subsection{Kivy}
+
+\subsection{Grafische Gebruikersinterface}
+
+\subsection{Communicatie tussen Front- en Back-end}
+
+\section{Conflixt Explanation}
+Het is mogelijk dat de gebruiker een verkeerde keuze maakt waardoor de theorie nietmeer satisfieerbaar is. Simpel gezegd heeft de gebruiker een waarde gekozen voor een bepaalde variabele, zodanig dat dit ervoor zorgt dat \'{e}\'{e}n of meerdere regels uit de theorie niet meer waar kunnen worden gemaakt.
+
+\begin{lstlisting}[mathescape]
+A $\wedge$ B
+$\neg$ A
+\end{lstlisting}
+
+In het voorbeeld, zegt de theorie ons dat A en B beide waar moeten zijn. We zeggen dat A niet waar is. Door deze invulling kan de regel nooit waar worden ongeachte de waarde van B. De theorie is dus onsatisfieerbaar. 
+
+Conflict explanation wil zeggen een verklaring zoeken waarom een bepaalde selectie door de gebruiker dit veroorzaakt. 
+
+IDP gebruikt momenteel twee technieken om oorzaken van onsatisfieerbaarheid op te sporen. De unsatstructure spoort de set van variabelen op die het probleem veroorzaken. Vervolgens is er de unsatcore, die zoekt naar de kleinste set van regels uit de theorie die niet waar gemaakt kunnen worden.
+
+\subsubsection{Unsatstructure}
+De unsatstructure is een efficiënte tool om aan de gebruiker te kunnen meedelen, welke van de voormalige selecties problemen veroorzaken. In ons voorbeeld van het ISP kan de gebruiker enkel de keuze maken om een dag te volgen in een bepaalde fase (te kiezen uit de lijst van mogelijke waarden) of kan hij/zij aangeven om een vak niet te volgen. 
+Bij een slechte selectie zal de unsatstructure de vakken oplijsten samen met de selectie die de gebruiker ervoor gemaakt heeft, en dit enkel voor de vakken waarvoor de selectie bijdragen tot de onsatisfieerbaarheid. De gebruiker krijgt hier dan de mogelijkheid om voor deze vakken de voorheen gemaakte keuze ongedaan te maken of te veranderen. 
+
+\subsubsection{Reified Constraints}
+Wat opvalt is dat de voorgaande techniek enkel een verzameling selecties teruggeeft die bijdragen tot het probleem. Maar verdere uitleg over welke regel(s) uit de theorie niet meer waar gemaakt kunnen worden en waarom wordt niet gegeven. Dus de gebruiker kan niet weten wat er moet veranderen. 
+Herinner de unsatcore zoekt achter de kleinste set van regels uit de theorie die niet meer waar gemaakt kunnen worden. En hoewel dit hetgene is dat we willen weten, is er toch nog een probleem. 
+De IDP syntax is voor de doorsnee programmeur goed te lezen, maar voor een doorsnee gebruiker die niets van programmeren afweet zal dit ongetwijfeld als chinees overkomen. Neem als voorbeeld onderstaande regel, elke student computerwetenschappen zal vrij snel kunnen achterhalen wat de regel inhoud. Maar personen zonder deze achtergrond zullen dit niet kunnen verstaan.
+
+\begin{lstlisting}[mathescape]
+$\forall$vg[VakGroep] : IsType(vg,AVO) $\Rightarrow$ GesAantalStupunVakGr(vg) 
+= sum{v[Vak], sp[Studiepunten],f[Fase] : InVakGroep(v,vg) 
+$\wedge$ Geselecteerd(v,f) $\wedge$ AantalStudiepunten(v)=sp : sp }.
+\end{lstlisting}
+
+We proberen dit probleem deels te overbruggen d.m.v. reified constraints. Hierbij koppelen we de waarheidswaarde van een regel (constraint) uit de theorie aan een boolean variabele. Nemen we terug onze regel van voorbeeld 1.
+\begin{lstlisting}[mathescape]
+C $\equivalent$ A $\wedge$ B
+
+$\neg$ A
+\end{lstlisting}
+
+
