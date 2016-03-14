@@ -5,9 +5,10 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Gelle and Weigel(1996)]{gelle1996interactive}
-Esther Gelle and Rainer Weigel.
-\newblock Interactive configuration using constraint satisfaction techniques.
-\newblock In \emph{PACT-96}, pages 37--44, 1996.
+\bibitem[Vennekens(2015)]{vennekens2015lowering}
+Joost Vennekens.
+\newblock Lowering the learning curve for declarative programming: a python api
+  for the idp system.
+\newblock \emph{arXiv preprint arXiv:1511.00916}, 2015.
 
 \end{thebibliography}

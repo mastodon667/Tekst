@@ -5,16 +5,12 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
 \BOOKMARK [1][-]{section.1.1}{Probleemstelling}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Doel}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Related Work}{}% 8
-\BOOKMARK [0][-]{chapter.3}{Concept}{}% 9
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 10
-\BOOKMARK [1][-]{section.4.1}{IDP Knowledge base}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.2}{Front-End}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.3}{Conflixt Explanation}{chapter.4}% 13
-\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 14
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 15
-\BOOKMARK [0][-]{appendix.A}{The First Appendix}{}% 16
-\BOOKMARK [0][-]{appendix.B}{The Last Appendix}{}% 17
-\BOOKMARK [1][-]{section.B.1}{Lorem 20-24}{appendix.B}% 18
-\BOOKMARK [1][-]{section.B.2}{Lorem 25-27}{appendix.B}% 19
-\BOOKMARK [0][-]{section*.14}{Bibliography}{}% 20
+\BOOKMARK [0][-]{chapter.2}{Implementation}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Knowledge base constructie}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Front-End}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Features}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Conflict Explanation}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Evaluation}{}% 13
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 14
+\BOOKMARK [0][-]{chapter.5}{Related Work}{}% 15
+\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 16

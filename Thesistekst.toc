@@ -16,28 +16,30 @@
 \contentsline {subsection}{\numberline {1.1.1}Interactive Configuration Problems}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Individueel Studieprogramma}{1}{subsection.1.1.2}
 \contentsline {section}{\numberline {1.2}Doel}{1}{section.1.2}
-\contentsline {chapter}{\chapternumberline {2}Related Work}{3}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Concept}{5}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Implementation}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}IDP Knowledge base}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Theorie van het ISP}{7}{subsection.4.1.1}
-\contentsline {subsubsection}{Vakken}{7}{section*.9}
-\contentsline {subsubsection}{Vakgroeptypes}{7}{section*.10}
-\contentsline {subsection}{\numberline {4.1.2}Theorie van het lessenrooster}{8}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Front-End}{8}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Kivy}{8}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Grafische Gebruikersinterface}{8}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Communicatie tussen Front- en Back-end}{8}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Conflixt Explanation}{8}{section.4.3}
-\contentsline {subsubsection}{Unsatstructure}{9}{section*.11}
-\contentsline {subsubsection}{Reified Constraints}{9}{section*.12}
-\contentsline {chapter}{\chapternumberline {5}Evaluation}{11}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{13}{chapter.6}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{17}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{19}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{19}{section.B.1}
-\contentsline {section}{\numberline {B.2}Lorem 25-27}{20}{section.B.2}
-\contentsline {chapter}{Bibliography}{21}{section*.14}
+\contentsline {chapter}{\chapternumberline {2}Implementation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Knowledge base constructie}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Theorie van het ISP}{3}{subsection.2.1.1}
+\contentsline {subsubsection}{Vakken}{3}{section*.9}
+\contentsline {subsubsection}{Vakgroeptypes}{3}{section*.10}
+\contentsline {subsection}{\numberline {2.1.2}Theorie van het lessenrooster}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Front-End}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Grafische Gebruikersinterface}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Communicatie tussen Front- en Back-end}{4}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Features}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Propagatie}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Model Expansie}{5}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Minimizatie}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Ongedaan Maken}{5}{subsection.2.3.4}
+\contentsline {paragraph}{Strategie 1}{5}{section*.11}
+\contentsline {paragraph}{Strategie 2}{5}{section*.12}
+\contentsline {paragraph}{Strategie 3}{6}{section*.13}
+\contentsline {section}{\numberline {2.4}Conflict Explanation}{6}{section.2.4}
+\contentsline {subsubsection}{Unsatstructure}{7}{section*.14}
+\contentsline {subsubsection}{Reified Constraints}{7}{section*.15}
+\contentsline {chapter}{\chapternumberline {3}Evaluation}{9}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Conclusion}{11}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Related Work}{13}{chapter.5}
+\contentsline {chapter}{Bibliography}{15}{section*.17}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}

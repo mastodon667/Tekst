@@ -1,40 +1,61 @@
 \chapter{Implementation}
 \label{cha:implementation}
 
-\section{IDP Knowledge base}
+\section{Knowledge base constructie}
 
 \subsection{Theorie van het ISP}
 Geen opleiding aan de KU Leuven is dezelfde, de opleidingsonderdelen verschillen net zoals de vakgroepen waar ze deel van uitmaken. Voor sommige vakgroepen ben je verplicht alle onderdelen op te nemen, terwijl je voor andere en minimaal (of zelfs maximaal) aantal studiepunten ervan moet opnemen. Kortom de regels binnen \'{e}\'{e}nzelfde opleiding zijn niet zo moeilijk om te beschrijven, maar om dit te veralgemenen en een theorie te cre\"{e}ren die voor alle opleidingen een geldig ISP kan beschrijven dat is een andere paar mouwen. Voor het gemak van de lezer noemen we opleidingsonderdelen vanaf nu vakken.
 
-Om te beginnen is het belangrijk om structuren te vinden die ongeacht de opleiding of opleidingsonderdeel telkens hetzelfde zijn.
-
 \subsubsection{Vakken}
 Een vak is een simpel type dat altijd dezelfde eigenschappen heeft vertoond. Het heeft een unieke vakcode met daaraan een naam gekoppeld. Het telt een aantal studiepunten dat de werklast beschrijft.
-Een opleiding kan kan bestaan uit \'{e}\'{e}n of meerdere fases, en voor elk vak is er bepaald in welke fase(s) van de opleiding je het kan volgen. let wel je kan een vak per opleiding maar \'{e}\'{e}n keer volgen. 
-En tenslotte valt elk vak oftwel in het eerste, tweede of beide semesters (in dit laatste geval noemt men het een jaarvak).
+Een opleiding kan kan bestaan uit \'{e}\'{e}n of meerdere fases, en voor elk vak is er bepaald in welke fase(s) van de opleiding je het kan volgen. let wel je kan een vak per opleiding maar \'{e}\'{e}n keer volgen. En tenslotte valt elk vak oftwel in het eerste, tweede of beide semesters (in dit laatste geval noemt men het een jaarvak).
 
 \subsubsection{Vakgroeptypes}
 Zo valt op dat we telkens dezelfde \textbf{types} van \emph{vakgroepen} tegenkomen. 
-Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan.
-Zo is elke opleiding op zich eeen vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen.
-Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt.
-Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. 
-Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan.
-En ten slotte is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
+Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan. Zo is elke opleiding op zich eeen vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen. Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt. Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan. En als laatse is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
 
-Deze types zijn we het vaakst voorkomen, en kunnen ongeacht de opleiding met dezelfde set van regels beschreven worden. Het is mogelijk dat sommige types van vakgroepen niet telkens voorkomen, en dus de regels ook niet van kracht zijn. In een bacheloropleiding zal bijvoorbeeld nooit een vakgroep voorkomen van het type Bachelor verbrendend pakket. 
+Deze types zien we het vaakst voorkomen en kunnen ongeacht de opleiding met dezelfde set van regels beschreven worden. Het is mogelijk dat sommige types van vakgroepen niet telkens voorkomen, en dus de regels ook niet van kracht zijn. In een bacheloropleiding zal bijvoorbeeld nooit een vakgroep voorkomen van het type Bachelor verbrendend pakket. 
 
 \subsection{Theorie van het lessenrooster}
 
+
+
 \section{Front-End}
 
-\subsection{Kivy}
+Om een zo goed mogelijke gebruikservaring aan te kunnen bieden hebben we een Front-end applicatie ontwikkeld voorzien van een Grafische Interface. Deze communiceert under the hood met de IDP knowledge base. Alle selecties gemaakt door de gebruiker worden vertaald naar FO(\textperiodcentered) en doorgespeeld aan IDP. Vervolgens voert IDP de gewenste vorm van inferntie uit en geeft het resultaat hiervan terug aan de Front-end die dan verwerkt en aan de gebruiker laat zien via de GUI.
 
 \subsection{Grafische Gebruikersinterface}
 
-\subsection{Communicatie tussen Front- en Back-end}
 
-\section{Conflixt Explanation}
+
+\subsection{Communicatie tussen Front- en Back-end}
+Niet alleen zijn is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. En hoewel deze API zeker de kloof tussen beide programmeertalen kleiner maakt, schiet ze op sommige vlakken toch te kort. Zo laat het bijvoorbeeld niet toe om aggregaties te te beschrijven. Daarom heb ik gekozen om ze niet te gebruiken en in plaats daarvan zelf de communicatie tussen beide te regelen. De theorie en vocabulair worden uitgelezen uit een tekstbestand en de structuur kan automatisch gegenereerd worden door de Vak en Vakgroep klassen in Python zelf. Een parser klasse steekt alles samen in een string en geeft dit door aan de IDP solver. Het resultaat wordt dan gefilterd (de nieuwe waarden worden eruit gehaald) en de veranderingen worden verwerkt. 
+
+\section{Features}
+
+\subsection{Propagatie}
+Om het ISP samen te stellen moeten volgende, nog onbekende predicaten ingevuld worden door de gebruiker: Geselecteerd(Vak,Phase) en NietGeintereseerd(Vak). Bij elke stap (nieuwe selectie die de gebruiker maakt) wordt indien die selectie satisfieerbaar is, eventuele propagaties ook geselecteerd. 
+
+\subsection{Model Expansie}
+Als de gebruiker een aantal selecties heeft gedaan en voor de rest geen specifieke eisen meer heeft, kan hij vragen aan het systeem om het ISP verder te laten genereren. 
+
+\subsection{Minimizatie}
+Ook is het mogelijk om het systeem het beste ISP te laten genereren volgens bepaalde regels. Momenteel is het mogelijk om een ISP te zoeken dat zo weinig mogelijk werklast bevat (zo min mogelijk studiepunten). Of om de werklast zo goed mogelijk te verdelen over de beide semesters. 
+Daarnaast is het ook mogelijk om de vakken zo te selecteren dat hun lesmomenten zo weinig mogelijk overlappen. 
+
+\subsection{Ongedaan Maken}
+Het ongedaan kunnen maken van selecties is een van de aspecten waar meerdere strategi\"{e}en mogelijk zijn. Belangrijk op weten is dat er een duidelijk onderscheid gemaakt moet worden tussen de keuzes gemaakt door de gebruiker en de eventuele propagaties die hieruit volgen. Deze moeten dan ook voor elke tussenstap keurig bijgehouden worden in wat we vanaf nu een actie zullen noemen. Het is eveneens belangrijk om de originele waarden bij te houden, zodanig dat als men een actie ongedaan maakt de toestand terug kan gezet worden naar hoe ze voorheen was. Het voorgaande is allemaal redelijk vanzelfsprekend, maar de moeilijkheid zit hem in de verschillende mogelijke strategie\"{e}n. 
+
+\paragraph{Strategie 1}
+Een mogelijkheid is om simpelweg een actie te zien zoals een overgang van \'{e}\'{e}n consistente toestand naar een nieuwe consistente toestand. Dus elke actie weet hoe de selectie eruit zag voordat ze uitgevoerd was, en hoe de selectie eruit zag na afloop van de actie. Een actie ongedaan maken houdt dan simpelweg in dat je de nieuwe toestand terug vervangt door de oude, een beetje als een rollback operatie. De voorwaarde hier is dat enkel de laatste actie ongedaan gemaakt kan worden, alvorens mijn de voorlaatste ongedaan wil maken. 
+
+\paragraph{Strategie 2}
+Dat brengt ons bij het volgende, bij het ongedaan maken van een actie draaien we als het ware de tijd terug en wordt de huidige toestand vervangen door de voorgaande. Dit wil zeggen dat ook de propagaties uit de actie verdwijnen, en misschien wil de gebruiker dit niet. In plaats daarvan willen we bij het ongedaan maken van een operatie de gebruiker laten kiezen of de eventuele propagaties mogen geselecteerd blijven of dat ze ook ongedaan gemaakt mogen worden. Hier komen we het volgende probleem tegen. Stel dat het vak A geselecteerd is en hieruit volgt dat vak B ook gevolgd moet worden. In de volgende actie selecteert de gebruiker dat hij niet ge\"{i}ntereseerd is in A en hieruit volgt dat B niet gevolgd mag worden. De gebruiker komt terug op zijn beslissing en wil de laatste actie ongedaan maken. Dit wil zeggen dat de keuze van vak A van niet ge\"{i}ntereseerd terug gezet wordt naar wel geselecteerd. Hieruit volgt dat de propagatie over vak B niet meer van kracht is, en de gebruiker dus de keuze krijgt om deze ongedaan te maken of niet. Stel dat hij ervoor kiest de propagatie te behouden dan wordt het probleem onsatisfieerbaar. Dit is niet het enigste probleem dat zich voordoet met deze strategie. Iedere actie beschrijft hoe de toestand voor en na de actie. Als de gebruiker een actie ongedaan maakt maar ervoor kiest om de propagaties uit deze actie toch te behouden, dan wil dit dus zeggen dat het resultaat van de voorgaande actie niet meer klopt met de huidige situatie. In feite maken we dus niet heel de actie ongedaan wat het heel moeilijk maakt om een duidelijk overzicht te bieden en consistentie te garanderen. Dat brengt ons bij het volgende punt. We willen actie Ai ongedaan maken, de actie bevat Ui de keuze van de gebruiker en Pi de propagaties die eruit volgden. De gebruiker kiest ervoor om p1 $\in$ Pi te behouden. Ai wordt ongedaan gemaakt, maar nu wordt er een actie A'i toegevoegd waarin U'i ={p1} de nieuwe selectie van de gebruiker is en P'i de eventuele propagaties die hieruit volgen. 
+
+\paragraph{Strategie 3}
+Tenslotte is er nog een geheel andere optie, waarbij niet meer uit wordt gegaan van acties die men kan ongedaan maken. Een vak kan geselecteerd zijn in een fase, het kan zijn dat de gebruiker niet ge\"{i}nteresseerd is in een vak of het kan zijn dat de gebruiker nog geen keuze heeft gemaakt. Het idee van iets ongedaan maken bij deze strategie is het volgende: de gebruiker heeft geselecteerd dat hij/zij vak A wil volgen tijdens fase 1 van de opleiding. Later zegt de gebruiker dat hij zij dit niet meer wel, maar zegt verder specifiek niets over het vak. We hebben de volgende verzamelingen: Ci de vakken waar de gebruiker specifiek een keuze over heeft gemaakt, Pi de propagaties die volgen uit Ci en Ui de vakken waarover nog geen uitspraak is gedaan. Stel vak V $\in$ Cn-1 maar de gebruiker maakt de selectie ongedaan en V wordt toegevoegd aan Un. Dus Cn = Cn-1 - V. dan gaan we kijken wat Pn en Un zijn, en vervolgens gaan we zien wat de doorsnede is van Pn-1 en Un, is deze verzameling niet leeg, dan wil dit zeggen dat er propagaties zijn die niet langer bestaan, en de gebruiker moet kiezen of hij/zij ze wil behouden. Zo ja worden ze toegevoegd aan Cn+1 en begint het hele process opnieuw.
+
+\section{Conflict Explanation}
 Het is mogelijk dat de gebruiker een verkeerde keuze maakt waardoor de theorie nietmeer satisfieerbaar is. Simpel gezegd heeft de gebruiker een waarde gekozen voor een bepaalde variabele, zodanig dat dit ervoor zorgt dat \'{e}\'{e}n of meerdere regels uit de theorie niet meer waar kunnen worden gemaakt.
 
 \begin{lstlisting}[mathescape]
@@ -61,11 +82,14 @@ $\forall$vg[VakGroep] : IsType(vg,AVO) $\Rightarrow$ GesAantalStupunVakGr(vg)
 = sum{v[Vak], sp[Studiepunten],f[Fase] : InVakGroep(v,vg) 
 $\wedge$ Geselecteerd(v,f) $\wedge$ AantalStudiepunten(v)=sp : sp }.
 \end{lstlisting}
-We proberen dit probleem deels te overbruggen d.m.v. reified constraints. Hierbij koppelen we de waarheidswaarde van een regel (constraint) uit de theorie aan een boolean variabele. Nemen we terug onze regel van voorbeeld 1.
+We proberen dit probleem deels te overbruggen d.m.v. reified constraints. Hierbij koppelen we de waarheidswaarde van een regel (constraint) uit de theorie aan een booleaanse variabele. Nemen we terug onze regel uit voorbeeld 1, daarvoor plaatsen we de Booleaanse variabele C toe gevolgd door een equivalentie. Wat dit wil zeggen is dat de waarheidswaarde voor en na de equivalentie dezelfde moet zijn. Dus als de regel uit voorbeeld 1 niet voldaan is, en dus 'false' is dan moet C ook 'false' zijn. 
 \begin{lstlisting}[mathescape]
 C $\Leftrightarrow$ A $\wedge$ B
-
 $\neg$ A
 \end{lstlisting}
+Op deze manier hoeven we enkel na te gaan of C true of false is om te weten te komen of de regel waar is of niet. Hiermee is de gebruiker natuurlijk nog niets wijzer geworden, dus wat is nu net het nut van dit soort constraints? Voor elke regel uit de theorie hebben we een uitleg in natuurlijke taal geschreven die beschrijft wat er mis is als de regel niet consistent is. Daarna moeten we simpelweg voor elke regel controleren wat de waarheidswaarde is van de booleaanse variabele voor de equivalentie. Is deze false, dan is de regel dus inconsistent en krijgt de gebruiker de uitleg te zien van deze regel in natuurlijke taal. 
 
+Hoewel dit een zeer gemakkelijke en generische manier is om aan conflict explanation te doen, zijn de mogelijkheden van deze techniek toch gelimiteerd en niet altijd voldoende toereikend. Ten eerste laat 
+deze methode enkel toe om inconsistente regels op te sporen. Een regel is inconsistent als ze niet voldaan is gegeven de huidige selectie. Terwijl een regel die nooit waar gemaakt kan worden gegeven de huidige selectie onsatisfieerbaar is. En ten tweede is de uitleg vaak oppervlakkig en niet specifiek genoeg om duidelijk te kunnen aanwijzen welke selectie juist verantwoordelijk is voor de inconsistentie. 
+Desalniettemin geeft deze techniek de gebruiker redelijk goed zicht op het probleem en dragen ze toch bij tot het maken van juiste beslissingen. Een voordeel is dat zodra er geen inconsistente regels meer weergegeven zijn de gebruiker weet dat de gemaakte selectie consistent is met de theorie. 
 
