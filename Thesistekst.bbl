@@ -1,9 +1,20 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Denecker and Vennekens(2008)]{denecker2008building}
+Marc Denecker and Joost Vennekens.
+\newblock Building a knowledge base system for an integration of logic
+  programming and classical logic.
+\newblock In \emph{Logic Programming}, pages 71--76. Springer, 2008.
+
+\bibitem[Gelle and Weigel(1996)]{gelle1996interactive}
+Esther Gelle and Rainer Weigel.
+\newblock Interactive configuration using constraint satisfaction techniques.
+\newblock In \emph{PACT-96}, pages 37--44, 1996.
 
 \bibitem[Vennekens(2015)]{vennekens2015lowering}
 Joost Vennekens.
