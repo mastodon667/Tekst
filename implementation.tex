@@ -2,13 +2,39 @@
 \label{cha:implementation}
 
 \section{Knowledge base constructie}
+Geen opleiding aan de KU Leuven is dezelfde, de opleidingsonderdelen verschillen net zoals de vakgroepen waar ze deel van uitmaken. Voor sommige vakgroepen ben je verplicht alle onderdelen op te nemen, terwijl je voor andere en minimaal (of zelfs maximaal) aantal studiepunten ervan moet opnemen. Kortom de regels binnen \'{e}\'{e}nzelfde opleiding zijn niet zo moeilijk om te beschrijven, maar om dit te veralgemenen en een theorie te cre\"{e}ren die voor alle opleidingen een geldig ISP kan beschrijven dat is een andere paar mouwen. Voor het gemak van de lezer noemen we opleidingsonderdelen vanaf nu vakken. Hieronder staan de verschillende onderdelen van de knowledge base beschreven.
 
-\subsection{Theorie van het ISP}
-Geen opleiding aan de KU Leuven is dezelfde, de opleidingsonderdelen verschillen net zoals de vakgroepen waar ze deel van uitmaken. Voor sommige vakgroepen ben je verplicht alle onderdelen op te nemen, terwijl je voor andere en minimaal (of zelfs maximaal) aantal studiepunten ervan moet opnemen. Kortom de regels binnen \'{e}\'{e}nzelfde opleiding zijn niet zo moeilijk om te beschrijven, maar om dit te veralgemenen en een theorie te cre\"{e}ren die voor alle opleidingen een geldig ISP kan beschrijven dat is een andere paar mouwen. Voor het gemak van de lezer noemen we opleidingsonderdelen vanaf nu vakken.
+\subsection{Vocabulary}
+Om te beginnen zal ik de vocabulair toelichten, beginnend bij de types waarna ik de functies en predicaten zal beschrijven.
+\begin{description}
+\item [Vak] De naam verklaart zichzelf al, dit type omvat de verzameling van de verschillende vakken in het domein. 
+De domeinwaarden zijn niet de naam in natuurlijke taal, maar de unieke vakcode.
+\item [VakNaam] Elk vak heeft een naam geschreven in natuurlijke taal oftwel de vaknaam.
+\item [VakGroep] Vakgroepen zijn een heel algemeen concept, het omvat elke verzameling van vakken waarvoor bepaalde regels gelden. Per groep gelden er andere regels die uniek zijn voor die groep, maar ook het type waartoe de groep behoort.
+\item [VakGroepType] Elke vakgroep maakt deel uit van een bepaald type groep, en per type groep gelden er bepaalde regels bovenop de regels van de individuele groep zelf.
+\item [Fase] Opleidingen bestaan uit fases oftewel jaren, de Master Computer Wetenschappen bestaat bijvoorbeeld uit 2 fases. Vakken binnen een opleiding kunnen enkel gevolgd worden tijdens de fase van de opleiding waartoe ze behoren. 
+\item [Semester] De K.U. Leuven werkt met een semester systeem, dit wil zeggen dat elke fase (schooljaar) is opgedeeld in 2 semesters. Elk vak kan gevolgd worden in de semester waartoe het behoort. Er bestaan ook jaarvakken waarvoor de werklast verdeeld is tussen beide semesters, een voorbeeld hiervan is de Masterproef.
+\item [Studiepunten] Elk vak bevat studiepunten, deze beschrijven de geschatte werklast voor dit vak. Vakgroepen vereisen vaak dat je een bepaalde hoeveelheid een studiepunten opneemt. 
+\end{description}
 
-\subsubsection{Vakken}
-Een vak is een simpel type dat altijd dezelfde eigenschappen heeft vertoond. Het heeft een unieke vakcode met daaraan een naam gekoppeld. Het telt een aantal studiepunten dat de werklast beschrijft.
-Een opleiding kan kan bestaan uit \'{e}\'{e}n of meerdere fases, en voor elk vak is er bepaald in welke fase(s) van de opleiding je het kan volgen. let wel je kan een vak per opleiding maar \'{e}\'{e}n keer volgen. En tenslotte valt elk vak oftwel in het eerste, tweede of beide semesters (in dit laatste geval noemt men het een jaarvak).
+\begin{description}
+\item [IsType(VakGroep,VakGroepType)]
+\item [Verplicht(Vak,VakGroep)]
+\item [InVakGroep(Vak,VakGroep)]
+\item [InFase(Vak,Fase)]
+\item [Geselecteerd(Vak,Fase)]
+\item [NietGeselecteerd(Vak)]
+\end{description}
+
+\begin{description}
+\item [HeeftNaam(Vak):VakNaam]
+\item [MinAantalStudiepunten(VakGroep):Studiepunten]
+\item [MaxAantalStudiepunten(VakGroep):Studiepunten]
+\item [AantalStudiepunten(Vak):Studiepunten]
+\item [GeselecteerdAantalStudiepuntenPerVakGroep(Vakgroep):Studiepunten]
+\item [GeselecteerdAantalStudiepuntenPerSemester(VakGroep):Studiepunten]
+\item [InSemester(Vak):Semester]
+\end{description}
 
 \subsubsection{Vakgroeptypes}
 Zo valt op dat we telkens dezelfde \textbf{types} van \emph{vakgroepen} tegenkomen. Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan. Zo is elke opleiding op zich eeen vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen. Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt. Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan. En als laatse is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
@@ -20,15 +46,27 @@ Deze types zien we het vaakst voorkomen en kunnen ongeacht de opleiding met deze
 
 
 \section{Front-End}
-
-Om een zo goed mogelijke gebruikservaring aan te kunnen bieden hebben we een Front-end applicatie ontwikkeld voorzien van een Grafische Interface. Deze communiceert under the hood met de IDP knowledge base. Alle selecties gemaakt door de gebruiker worden vertaald naar FO(\textperiodcentered) en doorgespeeld aan IDP. Vervolgens voert IDP de gewenste vorm van inferntie uit en geeft het resultaat hiervan terug aan de Front-end die dan verwerkt en aan de gebruiker laat zien via de GUI.
+Herinner dat het samenstellen van het ISP een Interactief configuratieprobleem is, en om aan de eigenschappen van zo'n IC probleem te kunnen voldoen moet de reactietijd van de inferentiemethoden snel genoeg zijn. Om dit te testen heb ik een front-end applicatie ontwikkeld die met behulp van een grafische interface een student toelaat een ISP samen te stellen. Deze input wordt vertaald naar FO(\textperiodcentered) en doorgespeeld naar IDP. Vervolgens voert IDP inferentie uit en de resultaten hiervan worden terug doorgespeeld naar de front-end, die het resultaat zal weergeven d.m.v. de GUI. Zo kunnen de prestaties van IDP in een gebruiksvriendelijke omgeving getest worden. 
 
 \subsection{Grafische Gebruikersinterface}
 
 
 
 \subsection{Communicatie tussen Front- en Back-end}
-Niet alleen zijn is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. En hoewel deze API zeker de kloof tussen beide programmeertalen kleiner maakt, schiet ze op sommige vlakken toch te kort. Zo laat het bijvoorbeeld niet toe om aggregaties te te beschrijven. Daarom heb ik gekozen om ze niet te gebruiken en in plaats daarvan zelf de communicatie tussen beide te regelen. De theorie en vocabulair worden uitgelezen uit een tekstbestand en de structuur kan automatisch gegenereerd worden door de Vak en Vakgroep klassen in Python zelf. Een parser klasse steekt alles samen in een string en geeft dit door aan de IDP solver. Het resultaat wordt dan gefilterd (de nieuwe waarden worden eruit gehaald) en de veranderingen worden verwerkt. 
+Niet alleen zijn is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. En hoewel deze API zeker de kloof tussen beide programmeertalen kleiner maakt, schiet ze op sommige vlakken toch te kort. Zo laat het bijvoorbeeld niet toe om aggregaties te te beschrijven. Daarom heb ik gekozen om ze niet te gebruiken en in plaats daarvan zelf de communicatie tussen beide te regelen. 
+
+De input/output van IDP is compleet tekstueel, de front-end moet een volledig tekst-bestand parsen dat IDP kan lezen en het resultaat is opnieuw een tekst-bestand dat het zal moeten ontcijferen om het resultaat te kunnen verwerken. 
+Zo'n tekst-bestand heeft altijd dezelfde opmaak, het bevat een theorie, vocabulair, structuur, termen en een procedure. In python bestaat er een parser object dat voor elke oproep zo'n tekst bestand zal opbouwen. Op de structuur na kan elk ander onderdeel zoals de theorie ingelezen worden. Enkel de structuur zal bij elke nieuwe actie dynamische gegenereerd moeten worden. 
+
+Python is een objectgeori\"{e}nteerde taal, en dus zijn de domeinvariabelen uit de structuur in objecten opgeslaan. De twee belangrijkste klassen zijn VakGroep en Vak, deze zien er als volgt uit: 
+
+\lstset{language=Python}
+\begin{lstlisting}
+class Vak(object):
+
+	def __init__(self):
+		pass
+\end{lstlisting}
 
 \section{Features}
 
