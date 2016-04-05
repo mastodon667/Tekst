@@ -1,6 +1,10 @@
 \chapter{Implementation}
 \label{cha:implementation}
 
+\subsection{Preliminaries}
+De kennis over het ISP staat beschreven in een theorie $\mathcal{T}$ over een vocabulair $\Sigma$. Deze vocabulair bestaat uit een set $\Sigma\textsubscript{p}$ van predicaatsymbolen en een set van functiesymbolen $\Sigma\textsubscript{f}$. Een interpretatie $\mathcal{I}$ bestaat uit een $\mathcal{D}$ de verzameling domeinelementen, een mapping van elk functiesymbool f/n naar een functie met ariteit n op $\mathcal{D}$ en een mapping van elk predicaatsymbool P/n naar een relatie R $\subseteq$ $\mathcal{D}\textsuperscript{n}$. Een three-valued parti\"{e}le interpretatie bestaat uit een mapping op drie waarheidswaarden {u,t,f} respectievelijk onbekend, waar en niet waar. Deze is minder precies dan een two-valued interpretatie op {t,f}. 
+De waarheidswaarden zijn partieel geordend, u $\leq\textsubscript{p}$ f en u $\leq\textsubscript{p}$ t.
+
 \section{Knowledge base constructie}
 Geen opleiding aan de KU Leuven is dezelfde, de opleidingsonderdelen verschillen net zoals de vakgroepen waar ze deel van uitmaken. Voor sommige vakgroepen ben je verplicht alle onderdelen op te nemen, terwijl je voor andere en minimaal (of zelfs maximaal) aantal studiepunten ervan moet opnemen. Kortom de regels binnen \'{e}\'{e}nzelfde opleiding zijn niet zo moeilijk om te beschrijven, maar om dit te veralgemenen en een theorie te cre\"{e}ren die voor alle opleidingen een geldig ISP kan beschrijven dat is een andere paar mouwen. Voor het gemak van de lezer noemen we opleidingsonderdelen vanaf nu vakken. Hieronder staan de verschillende onderdelen van de knowledge base beschreven.
 
@@ -37,7 +41,7 @@ De domeinwaarden zijn niet de naam in natuurlijke taal, maar de unieke vakcode.
 \end{description}
 
 \subsubsection{Vakgroeptypes}
-Zo valt op dat we telkens dezelfde \textbf{types} van \emph{vakgroepen} tegenkomen. Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan. Zo is elke opleiding op zich eeen vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen. Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt. Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan. En als laatse is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
+Zo valt op dat we telkens dezelfde \textbf{types} van \emph{vakgroepen} tegenkomen. Deze types die steeds terugkomen in meerdere opleidingen hebben ongeacht de opleiding waar ze in voorkomen dezelfde regels die ermee gepaard gaan. Zo is elke opleiding op zich een vakgroep van het type \emph{opleiding}, het bevat vakken die je verplicht bent te volgen en keuzevakken. Het heeft een minimum (en maximum) aantal studiepunten dat de student verplicht moet opnemen. Een ander belangrijk type vakgroep is de (hoofd)specialisatie, verscheidene opleidingen geven de keuze tussen meerdere specialisaties. Verwacht wordt dat je van minstens 1 zo'n specialisatie alle verplichte vakken opneemt. Naast hoofdspecialisatie bestaat er ook het type verdere specialisatie, waarin de student verplicht wordt een bepaald aantal studiepunten op te nemen aan vakken uit deze of bepaalde andere vakgroepen. Vervolgens is er het type 'Algemeen vormende en onderzoeksondersteunende groep' vakgroep, dit is veruit het moeilijkste type groep om te beschrijven. De student moet opnieuw een bepaald aantal studiepunten aan vakken opnemen uit deze groep. Maar daarnaast gelden er ook specifieke regels voor verscheidene vakken die deel uitmaken ervan. En als laatse is er het type 'Bachelor verbredend pakket', waarin studenten die beginnen aan hun masteropleiding vakken moeten opnemen die ontbraken in hun bacheloropleiding.
 
 Deze types zien we het vaakst voorkomen en kunnen ongeacht de opleiding met dezelfde set van regels beschreven worden. Het is mogelijk dat sommige types van vakgroepen niet telkens voorkomen, en dus de regels ook niet van kracht zijn. In een bacheloropleiding zal bijvoorbeeld nooit een vakgroep voorkomen van het type Bachelor verbrendend pakket. 
 
@@ -53,25 +57,43 @@ Herinner dat het samenstellen van het ISP een Interactief configuratieprobleem i
 
 
 \subsection{Communicatie tussen Front- en Back-end}
-Niet alleen zijn is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. En hoewel deze API zeker de kloof tussen beide programmeertalen kleiner maakt, schiet ze op sommige vlakken toch te kort. Zo laat het bijvoorbeeld niet toe om aggregaties te te beschrijven. Daarom heb ik gekozen om ze niet te gebruiken en in plaats daarvan zelf de communicatie tussen beide te regelen. 
+Niet alleen zijn is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. En hoewel deze API zeker de kloof tussen beide programmeertalen kleiner maakt, schiet ze op sommige vlakken toch te kort. Zo laat het bijvoorbeeld niet toe om aggregaten te te beschrijven. Daarom heb ik gekozen om ze niet te gebruiken en in plaats daarvan zelf de communicatie tussen beide te regelen. 
 
-De input/output van IDP is compleet tekstueel, de front-end moet een volledig tekst-bestand parsen dat IDP kan lezen en het resultaat is opnieuw een tekst-bestand dat het zal moeten ontcijferen om het resultaat te kunnen verwerken. 
-Zo'n tekst-bestand heeft altijd dezelfde opmaak, het bevat een theorie, vocabulair, structuur, termen en een procedure. In python bestaat er een parser object dat voor elke oproep zo'n tekst bestand zal opbouwen. Op de structuur na kan elk ander onderdeel zoals de theorie ingelezen worden. Enkel de structuur zal bij elke nieuwe actie dynamische gegenereerd moeten worden. 
+De input/output van IDP is compleet tekstueel, de front-end moet een volledig tekst-bestand parsen in een formaat dat IDP kan begrijpen en verwerken. De output van IDP is opnieuw een tekst-bestand dat de front-end zal moeten ontcijferen om het resultaat te kunnen verwerken. Zo'n tekst-bestand heeft altijd dezelfde opmaak, het bevat een theorie, vocabulair, structuur, procedure en eventueel termen in geval van minimizatie. De front-end bevat een parser object dat voor elke oproep zo'n tekst bestand zal opbouwen. De theorie, vocabulair en de procedures zijn altijd dezelfde en hoeven slecht \'{e}\'{e}nmalig ingelezen te worden. Enkel de structuur zal bij elke nieuwe actie gedeeltelijk dynamische gegenereerd moeten worden. De predicaten in de vocabulair zijn opgedeeld in twee verzamelingen. De eerste verzameling $\Gamma$ bevat de predicaten die vooraf gegeven zijn en gekend zijn door het systeem. Anders gezegd bestaat er een interpretatie $\mathcal{G}$ voor $\Gamma$. De andere verzameling $\Omega$, zijn de predicaten waar nog geen interpretatie $\mathcal{W}$ voor gegeven is en die door de gebruiker (in dit geval de student) ingevuld zullen moeten worden. Tot deze laatste groep behoren volgende predicaten: Geselecteerd(Vak,Fase) en NietGeinteresseerd(Vak). De bedoeling is om een invulling te zoeken zodat $\mathcal{W}$ $\cup$ $\mathcal{G}$ consistent is met alle regels van de theorie $\mathcal{T}$.
 
-Python is een objectgeori\"{e}nteerde taal, en dus zijn de domeinvariabelen uit de structuur in objecten opgeslaan. De twee belangrijkste klassen zijn VakGroep en Vak, deze zien er als volgt uit: 
-
-\lstset{language=Python}
-\begin{lstlisting}
-class Vak(object):
-
-	def __init__(self):
-		pass
-\end{lstlisting}
 
 \section{Features}
 
+\subsection{Selectieproces}
+Elke keuze die de gebruiker maakt moet zorgvuldig afgehandeld worden om te kunnen geranderen dat de selectie altijd satisfieerbaar is. De voorwaarde is dat als de gebruiker een keuze maakt die ervoor zorgt dat de theorie niet langer satisfieerbaar is, hij hier meteen op de hoogte van wordt gebracht en zodanig dat hij dit kan oplossen alvorens verder te gaan. Er wordt gestart met de minst precieze interpretatie $\mathcal{W}\textsubscript{0}$ om uiteindelijk stapsgewijs tot een two-valued interpretatie $\mathcal{W}\textsubscript{n}$ te komen waarvoor geldt dat $\mathcal{W}\textsubscript{n}$ $\cup$ $\mathcal{G}$ $\models$ $\mathcal{T}$. Hoe deze stappen verlopen staat beschreven in onderstaand algoritme. Hier wordt $\mathcal{W}$ opnieuw opgedeeld in twee verzamelingen $\mathcal{U}$ en $\mathcal{P}$, respectievelijk de keuzes gemaakt door de gebruiker en de propagaties die hieruit volgen. 
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwInOut{Output}{Output}
+	\underline{function Selectieproces} $(\mathcal{U}\textsubscript{i})$ \;
+	\Input{De nieuwe keuze van de gebruiker $\mathcal{U}\textsubscript{i}$}
+	\Output{$\mathcal{U}\textsubscript{i}$, nieuwe propagaties $\mathcal{P}\textsubscript{i}$}
+	$\mathcal{U}\textsubscript{i} \leftarrow \mathcal{U}\textsubscript{i-1}$ [$\mathcal{N}\textsubscript{i}$]\;
+	\eIf{Sat($\mathcal{U}$)}
+		{
+		$\mathcal{P}\textsubscript{i-1} \leftarrow$ Propagate($\mathcal{U}\textsubscript{i}$)\;
+		*magic*\;
+		\eIf{$\mathcal{D}$ = $\emptyset$}
+			{
+			createAction()\;
+			}
+			{
+			
+			}
+		}
+		{
+		$\mathcal{V} \leftarrow$ Unsat($\mathcal{U}\textsubscript{i}$)\; 
+		}
+	\caption{Selectieproces}
+\end{algorithm}
+
 \subsection{Propagatie}
-Om het ISP samen te stellen moeten volgende, nog onbekende predicaten ingevuld worden door de gebruiker: Geselecteerd(Vak,Fase) en NietGeintereseerd(Vak). Bij elke stap (nieuwe selectie die de gebruiker maakt) wordt indien die selectie satisfieerbaar is, eventuele propagaties ook geselecteerd. 
+Om het ISP samen te stellen moeten volgende, nog onbekende predicaten ingevuld worden door de gebruiker: Geselecteerd(Vak,Fase) en NietGeinteresseerd(Vak). Bij elke stap (nieuwe selectie die de gebruiker maakt) wordt indien die selectie satisfieerbaar is, eventuele propagaties ook geselecteerd. 
 
 \subsection{Model Expansie}
 Als de gebruiker een aantal selecties heeft gedaan en voor de rest geen specifieke eisen meer heeft, kan hij vragen aan het systeem om het ISP verder te laten genereren. 
@@ -80,31 +102,10 @@ Als de gebruiker een aantal selecties heeft gedaan en voor de rest geen specifie
 Ook is het mogelijk om het systeem het beste ISP te laten genereren volgens bepaalde regels. Momenteel is het mogelijk om een ISP te zoeken dat zo weinig mogelijk werklast bevat (zo min mogelijk studiepunten). Of om de werklast zo goed mogelijk te verdelen over de beide semesters. 
 Daarnaast is het ook mogelijk om de vakken zo te selecteren dat hun lesmomenten zo weinig mogelijk overlappen. 
 
-\subsection{Selectieproces}
-Elke keuze die de gebruiker maakt moet zorgvuldig afgehandeld worden willen we dat de selectie altijd satisfieerbaar is. De voorwaarde is dat als de gebruiker een keuze maakt die ervoor zorgt dat de theorie onsatisfieerbaar wordt, hij hier meteen op de hoogte van wordt gebracht en dit dient aanpassen. 
 
-De werking is als volgt, bij elke nieuwe keuze wordt eerst gekeken of deze nieuwe selectie samen met alle voorgaande keuzes een satisfieerbare structuur vormen. Zo niet dan wordt de unsatstructure gezocht. Anders worden die eventueel nieuwe propagaties berekend. De nieuwe structuur wordt vergeleken met de voorgaande, om na te gaan of eventuele propagaties niet meer van kracht zijn. Als dit het geval is dan krijgt de gebruiker de keuze om ze te behouden. Dit hij dit dan wordt dit gezien als een selectie en dus begint het hele proces opnieuw. 
-
-\begin{algorithm}
-	\SetKwInOut{Input}{Input}
-	\SetKwInOut{Output}{Output}
-	\underline{function Selectieproces} $(\mathcal{U}\textsubscript{i})$ \;
-	\Input{De nieuwe keuze van de gebruiker $\mathcal{U}\textsubscript{i}$}
-	\Output{$\mathcal{U}\textsubscript{i}$, nieuwe propagaties $\mathcal{P}\textsubscript{i}$}
-	$\mathcal{U} \leftarrow \mathcal{U}\textsubscript{1}  \cup$ ... $\cup  \mathcal{U}\textsubscript{i}$\;
-	\eIf{Sat($\mathcal{U}$)}
-		{
-		$\mathcal{P}\textsubscript{i} \leftarrow$ Propagate($\mathcal{U}\textsubscript{1}$)\;
-		
-		}
-		{
-		$\mathcal{V} \leftarrow$ Unsat($\mathcal{U}$)\; 
-		}
-	\caption{Selectieproces}
-\end{algorithm}
 
 \subsection{Ongedaan Maken}
-Het ongedaan kunnen maken van selecties is een van de aspecten waar meerdere strategi\"{e}en mogelijk zijn. Belangrijk op weten is dat er een duidelijk onderscheid gemaakt moet worden tussen de keuzes gemaakt door de gebruiker en de eventuele propagaties die hieruit volgen. Deze moeten dan ook voor elke tussenstap keurig bijgehouden worden in wat we vanaf nu een actie zullen noemen. Het is eveneens belangrijk om de originele waarden bij te houden, zodanig dat als men een actie ongedaan maakt de toestand terug kan gezet worden naar hoe ze voorheen was. Het voorgaande is allemaal redelijk vanzelfsprekend, maar de moeilijkheid zit hem in de verschillende mogelijke strategie\"{e}n. 
+Het ongedaan kunnen maken van selecties is een van de aspecten waar meerdere strategi\"{e}en mogelijk zijn. Belangrijk om weten is dat er een duidelijk onderscheid gemaakt moet worden tussen de keuzes gemaakt door de gebruiker en de eventuele propagaties die hieruit volgen. Deze moeten dan ook voor elke tussenstap keurig bijgehouden worden in wat we vanaf nu een actie zullen noemen. Het is eveneens belangrijk om de originele waarden bij te houden, zodanig dat als men een actie ongedaan maakt de toestand terug kan gezet worden naar hoe ze voorheen was. Het voorgaande is allemaal redelijk vanzelfsprekend, maar de moeilijkheid zit hem in de verschillende mogelijke strategie\"{e}n. 
 
 \paragraph{Strategie 1}
 Een mogelijkheid is om simpelweg een actie te zien zoals een overgang van \'{e}\'{e}n consistente toestand naar een nieuwe consistente toestand. Dus elke actie weet hoe de selectie eruit zag voordat ze uitgevoerd was, en hoe de selectie eruit zag na afloop van de actie. Een actie ongedaan maken houdt dan simpelweg in dat je de nieuwe toestand terug vervangt door de oude, een beetje als een rollback operatie. De voorwaarde hier is dat enkel de laatste actie ongedaan gemaakt kan worden, alvorens mijn de voorlaatste ongedaan wil maken. 
@@ -149,6 +150,6 @@ $\neg$ A
 \end{lstlisting}
 Op deze manier hoeven we enkel na te gaan of C true of false is om te weten te komen of de regel waar is of niet. Hiermee is de gebruiker natuurlijk nog niets wijzer geworden, dus wat is nu net het nut van dit soort constraints? Voor elke regel uit de theorie hebben we een uitleg in natuurlijke taal geschreven die beschrijft wat er mis is als de regel niet consistent is. Daarna moeten we simpelweg voor elke regel controleren wat de waarheidswaarde is van de booleaanse variabele voor de equivalentie. Is deze false, dan is de regel dus inconsistent en krijgt de gebruiker de uitleg te zien van deze regel in natuurlijke taal. 
 
-Hoewel dit een zeer gemakkelijke en generische manier is om aan conflict explanation te doen, zijn de mogelijkheden van deze techniek toch gelimiteerd en niet altijd voldoende toereikend. Ten eerste laat deze methode enkel toe om inconsistente regels op te sporen. Een regel is inconsistent als ze niet voldaan is gegeven de huidige selectie. Terwijl een regel die nooit waar gemaakt kan worden gegeven de huidige selectie onsatisfieerbaar is. En ten tweede is de uitleg vaak oppervlakkig en niet specifiek genoeg om duidelijk te kunnen aanwijzen welke selectie juist verantwoordelijk is voor de inconsistentie. 
-Desalniettemin geeft deze techniek de gebruiker redelijk goed zicht op het probleem en dragen ze toch bij tot het maken van juiste beslissingen. Een voordeel is dat zodra er geen inconsistente regels meer weergegeven zijn de gebruiker weet dat de gemaakte selectie consistent is met de theorie. 
+Hoewel dit een zeer gemakkelijke en generische manier is om aan conflict explanation te doen, zijn de mogelijkheden van deze techniek toch gelimiteerd en niet altijd voldoende toereikend. Ten eerste is de uitleg vaak oppervlakkig en niet specifiek genoeg om duidelijk te kunnen aanwijzen welke selectie juist verantwoordelijk is voor de inconsistentie. /*VOORBEELD PRESENTATIE INVOEGEN*/ En ten tweede laat deze methode enkel toe om inconsistente regels op te sporen. Een regel is inconsistent als ze niet voldaan is gegeven de huidige parti\"{e} selectie. Terwijl een set van regels die nooit samen waar gemaakt kunnen worden gegeven de huidige parti\"{e}le selectie niet-satisfieerbaar zijn. 
+
 
