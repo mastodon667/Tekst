@@ -30,20 +30,28 @@
 \contentsline {subsection}{\numberline {2.2.2}Communicatie tussen Front- en Back-end}{7}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Features}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Selectieproces}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Propagatie}{8}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Model Expansie}{8}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Minimizatie}{9}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Ongedaan Maken}{9}{subsection.2.3.5}
-\contentsline {paragraph}{Strategie 1}{9}{section*.10}
-\contentsline {paragraph}{Strategie 2}{10}{section*.11}
-\contentsline {paragraph}{Strategie 3}{10}{section*.12}
-\contentsline {section}{\numberline {2.4}Conflict Explanation}{11}{section.2.4}
-\contentsline {subsubsection}{Unsatstructure}{11}{section*.13}
-\contentsline {subsubsection}{Reified Constraints}{11}{section*.14}
-\contentsline {chapter}{\chapternumberline {3}Evaluation}{13}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Conclusion}{17}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Related Work}{19}{chapter.5}
-\contentsline {chapter}{Bibliography}{21}{section*.16}
+\contentsline {subsection}{\numberline {2.3.2}Propagatie}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Model Expansie}{9}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Minimizatie}{10}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Ongedaan Maken}{10}{subsection.2.3.5}
+\contentsline {paragraph}{Strategie 1a}{10}{section*.10}
+\contentsline {paragraph}{Strategie 1b}{10}{section*.11}
+\contentsline {paragraph}{Strategie 2}{12}{section*.12}
+\contentsline {section}{\numberline {2.4}Conflict Explanation}{12}{section.2.4}
+\contentsline {subsubsection}{Unsatstructure}{13}{section*.13}
+\contentsline {subsubsection}{Reified Constraints}{13}{section*.14}
+\contentsline {chapter}{\chapternumberline {3}Evaluation}{17}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Conclusion}{21}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Related Work}{23}{chapter.5}
+\contentsline {paragraph}{Separating Knowledge from Computation: An FO(\textperiodcentered ) Knowledge Base System and its Model Expansion Inference \cite {decat14}}{23}{section*.15}
+\contentsline {paragraph}{Interactive Configurations and the KB-Paradigm \cite {vanhertum}}{23}{section*.16}
+\contentsline {paragraph}{A Logical Framework for Configuration Software \cite {vlaeminck09}}{24}{section*.17}
+\contentsline {paragraph}{Predicate Logic as a Modelling Language: The IDP System \cite {bogaerts14}}{24}{section*.18}
+\contentsline {paragraph}{Consistency Restoration and Explanations in Dynamic CSP's: Application to Configuration \cite {amilhastre01}}{25}{section*.19}
+\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens15}}{25}{section*.20}
+\contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {ocallaghan05}}{26}{section*.21}
+\contentsline {subsection}{\numberline {5.0.1}Huidige stand van zaken}{26}{subsection.5.0.1}
+\contentsline {chapter}{Bibliography}{29}{section*.23}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
