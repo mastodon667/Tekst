@@ -14,8 +14,8 @@ Naast het basispakket is het ook mogelijk voor de gebruiker om een parti\"{e}le 
 \begin{table}[]
 \centering
 \caption{Functionaliteiten}
-\label{my-label}
-\begin{tabular}{|l|l|l|}
+\label{functionaliteiten}
+\begin{tabular}{|l|c|c|}
 \hline
  & Web applicatie & Nieuwe applicatie \\ \hline
 Handmatige selectie & \checkmark & \checkmark \\ \hline
@@ -29,6 +29,14 @@ Geschiedenis v. Acties &  & \checkmark \\ \hline
 Weergave lessenrooster &  & \checkmark \\ \hline
 \end{tabular}
 \end{table}
+
+Er is dus een duidelijk verschil in het aanbod van functionaliteiten, maar bieden ze ook allemaal hetzelfde niveau van ondersteuning? Om te beginnen zullen we de gemeenschappelijke onderdelen onder de loep nemen. Als eerste is er de handmatige selectie, wellicht de meest essenti\"{e}le van alle functionaliteiten. In beide applicaties geeft het de student de mogelijkheid om aan te vinken welke van de vakken hij/zij wenst te volgen, beide applicaties werken op dezelfde manier met uitzondering dat het in de web applicatie niet mogelijk is om aan te geven dat je niet ge\"{i}nteresseerd bent in een vak. 
+
+Zowel de bestaande als de nieuwe app kunnen een selectie controleren op geldigheid, maar de nieuwe applicatie doet dit bij elke nieuwe selectie van de student zodanig dat fouten zo snel mogelijk gedetecteerd worden. Bij de web applicatie gebeurt dit enkel wanneer de student denkt klaar te zijn en diens keuze bevestigt. 
+
+Blijkt dan dat de selectie niet geldig is volgens de regels, dan dient hier een verklaring voor gegeven te worden. Het bestaande systeem biedt duidelijke verklaringen in de zin dat het kan verklaren welke regels er niet kloppen. De duidelijkheid van de verklaringen in het nieuwe systeem is sterk afhankelijk van de IDP theorie die het gebruikt, de opmerking werd al gemaakt dat een algemene theorie niet geschikt is om de gebruiker goed te kunnen informeren i.p.v. een specifieke theorie. Het is dus mogelijk voor de nieuwe applicatie om evenveel duidelijkheid te kunnen scheppen als de web applicatie, maar dit zal sterk afhangen van de gebruikte theorie en dus ten koste zijn van andere factoren. Maar hier houdt het voor de web applicatie op, naast tekstuele verklaringen van de regels die verbroken zijn biedt het systeem geen verdere ondersteuning die de gebruiker kunnen helpen bij het oplossen van een foute selectie. De nieuwe applicatie kan opsporen in welk deel van de selectie de fout zich bevindt, en is zelfs in staat om alle mogelijk (minimale) oplossingen te tonen aan de gebruiker. 
+
+
 
 \subsection{Inferentie} 
 Met behulp van de interface kan de gebruiker een ISP samenstellen. Het is de bedoeling om de gebruiker bij te staan in dit proces, dit door gevolgen van bepaalde keuzes door te voeren, een onvolledige selectie te vervolledigen, een optimaal ISP samen te stellen volgens een bepaald criterium, foute keuzes te detecteren en de gebruiker hiervan op de hoogte te brengen etc. En niet te vergeten, al deze processen moeten in real-time gebeuren en dus zeer snel afgehandeld kunnen worden. Binnen het domein van de opleidingen, ben ik tot de conclusie gekomen dat zowat al deze inferentie taken snel zeer snel en effici\"{e}nt uitgevoerd worden. De reactietijd, meegerekend het genereren van de IDP text file en het resultaat terug ontcijferen bedraagt in bijna alle gevallen minder dan 1 seconde. Zelfs de resultaten van minimizatie opdrachten geven goede resultaten terug met een maximale rekentijd van ongeveer 10 seconden. 

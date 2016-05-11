@@ -24,25 +24,10 @@ De domeinwaarden zijn niet de naam in natuurlijke taal, maar de unieke vakcode.
 \end{description}
 
 \subsubsection{Predicaten}
-\begin{description}
-\item [IsType(VakGroep,VakGroepType)] Zoals 
-\item [Verplicht(Vak,VakGroep)]
-\item [InVakGroep(Vak,VakGroep)]
-\item [InFase(Vak,Fase)]
-\item [Geselecteerd(Vak,Fase)]
-\item [NietGeselecteerd(Vak)]
-\end{description}
+
 
 \subsubsection{Functies}
-\begin{description}
-\item [HeeftNaam(Vak):VakNaam]
-\item [MinAantalStudiepunten(VakGroep):Studiepunten]
-\item [MaxAantalStudiepunten(VakGroep):Studiepunten]
-\item [AantalStudiepunten(Vak):Studiepunten]
-\item [GeselecteerdAantalStudiepuntenPerVakGroep(Vakgroep):Studiepunten]
-\item [GeselecteerdAantalStudiepuntenPerSemester(VakGroep):Studiepunten]
-\item [InSemester(Vak):Semester]
-\end{description}
+
 
 \subsection{Theorie van het lessenrooster}
 
@@ -210,7 +195,6 @@ $\wedge$ Geselecteerd(v,f) $\wedge$ AantalStudiepunten(v)=sp : sp }.
 \end{lstlisting}
 Een mogelijke oplossing voor dit probleem komt in de vorm van reified constraints. De theorie T bestaat uit regels (constraints) en hierin wordt onderscheid gemaakt tussen 2 sets van regels. De eerste is de set van regels B die altijd waar zullen zijn, deze noemen we achtergrond constraints. De andere set is die van regels F genaamd voorgrond constraints die de gebruiker moet zien waar te maken d.m.v. een correcte interpretatie samen te stellen. Het is deze set van regels F, waarvoor reified constraints gebruikt zullen worden. Voor zij die niet bekend zijn met het concept van reified constraints, het is een zeer simpele techniek. Een regel C (constraint) kan heel simpel omgevormd worden tot een reified constraint door C equivalent te maken aan een booleaanse waarde B. Dus een regel C ziet er als dan als volgt uit, B $\leftrightarrow$ C. De waarheidswaarde van C is dan equivalent aan die van B, dus als de regel niet consistent of 'false' is, zal B dus ook 'false' zijn, hetzelfde geldt ook voor 'true' uiteraard. De voorgaande regel ziet er dan als volgt uit. 
 \begin{lstlisting}[mathescape, caption=IDP Reified Constraint Example, frame=single]
-\label{alg:Regel1}
 Regel $\leftrightarrow$ $\forall$vg[VakGroep] : IsType(vg,AVO) $\Rightarrow$ GesAantalStupunVakGr(vg) 
 = sum{v[Vak], sp[Studiepunten],f[Fase] : InVakGroep(v,vg) 
 $\wedge$ Geselecteerd(v,f) $\wedge$ AantalStudiepunten(v)=sp : sp }.

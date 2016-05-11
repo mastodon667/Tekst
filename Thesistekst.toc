@@ -49,8 +49,8 @@
 \contentsline {subsection}{\numberline {3.0.2}Front-End Applicatie}{19}{subsection.3.0.2}
 \contentsline {subsection}{\numberline {3.0.3}Inferentie}{21}{subsection.3.0.3}
 \contentsline {subsection}{\numberline {3.0.4}Conflict Explanation}{21}{subsection.3.0.4}
-\contentsline {subsubsection}{Unsatstructure}{21}{section*.18}
-\contentsline {subsubsection}{Reified Constraints}{21}{section*.19}
+\contentsline {subsubsection}{Unsatstructure}{22}{section*.18}
+\contentsline {subsubsection}{Reified Constraints}{22}{section*.19}
 \contentsline {subsubsection}{Amilhastre}{22}{section*.20}
 \contentsline {chapter}{\chapternumberline {4}Conclusion}{23}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Related Work}{25}{chapter.5}
