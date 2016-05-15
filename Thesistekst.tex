@@ -1,22 +1,14 @@
 \documentclass[master=elt,masteroption=eg,english]{kulemt}
 \setup{title={The ISP Course Selection Puzzle},
   author={Herbert Gorissen},
-  promotor={Prof.\ Gerda Janssens},
+  promotor={Prof. Gerda Janssens},
   assessor={},
   assistant={Matthias van der Hallen}}
-% The following \setup may be removed entirely if no filing card is wanted
+
 \setup{filingcard,
-  translatedtitle=The ISP Course Selection Puzzle,
+  translatedtitle={The ISP Course Selection Puzzle},
   udc=621.3,
-  shortabstract={Here comes a very short abstract, containing no more than 500
-    words. \LaTeX\ commands can be used here. Blank lines (or the command
-    \texttt{\string\pa r}) are not allowed!
-    \endgraf}}
-% Uncomment the next line for generating the cover page
-%\setup{coverpageonly}
-% Uncomment the next \setup to generate only the first pages (e.g., if you
-% are a Word user.
-%\setup{frontpagesonly}
+  shortabstract={blah blah.}}
 
 %\begin{figure}
 %  \centering
@@ -25,7 +17,6 @@
 %  \label{fig:logo}
 %\end{figure}
 
-% Choose the main text font (e.g., Latin Modern)
 \setup{font=lm}
 
 % If you want to include other LaTeX packages, do it here. 
@@ -36,39 +27,30 @@
 \usepackage{natbib}
 \usepackage{ulem}
 \usepackage{listings}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[linesnumbered,ruled]{algorithm2e}
 \bibliographystyle{plainnat}
 \setcitestyle{authoryear}
 
-%%%%%%%
-% The lipsum package is used to generate random text.
-% You never need this in a real master thesis text!
-\IfFileExists{lipsum.sty}%
- {\usepackage{lipsum}\setlipsumdefault{11-13}}%
- {\newcommand{\lipsum}[1][11-13]{\par And some text: lipsum ##1.\par}}
-%%%%%%%
-
-%\includeonly{chap-n}
 \begin{document}
 
 \begin{preface}
-  
 \end{preface}
 
 \tableofcontents*
 
 \begin{abstract}
-Bij de start van een opleiding aan de KU Leuven is iedere toekomstige student verplicht zijn of haar opleiding samen te stellen uit een hele waaier aan opleidingsonderdelen. De selectie van opleidingsonderdelen is echter onderworpen aan een set van regels die allemaal voldaan moeten zijn wil men een geldig individueel studieprogramma (ISP) bekomen. Het ISP maakt deel uit van een specifieke groep van problemen genaamd \emph{configuratie problemen}.
+Bij de start van een opleiding aan de KU Leuven is iedere toekomstige student verplicht zijn of haar opleiding samen te stellen uit een hele waaier aan opleidingsonderdelen. De selectie van opleidingsonderdelen is echter onderworpen aan een set van regels die allemaal voldaan moeten zijn wil men een geldig individueel studieprogramma (ISP) bekomen. We kunnen dit scenario onderbrengen in een specifieke verzameling van problemen, namelijk interactieve configuratieproblemen. Een gebruiker, in dit geval de student is verantwoordelijk voor het kiezen van waarden uit het domein voor de verschillende variabelen. Het systeem is tegelijk verantwoordelijk voor de ondersteuning van de gebruiker gedurende dit proces, zodanig dat de selectie uiteindelijk een geldige oplossing vormt volgens de regels van het probleem. 
 
-Het IDP systeem ontwikkeld aan de KU Leuven laat toe domein specifieke kennis uit te drukken in FO(\textperiodcentered), een uitbreiding op eerste orde logica, ook wel de theorie genoemd. Eens de kennis beschreven is kan men met het bijhorende IDP systeem verscheidene vormen van inferentie toepassen op de theorie. 
+In dit onderzoek hebben we gekozen voor IDP, een kennis representatie systeem ontwikkeld aan de KU Leuven dat toelaat domein specifieke kennis uit te drukken d.m.v. FO(\textperiodcentered) in wat de \textit{theorie} van het probleem genoemd wordt. Met deze kennis kan het bijhorende IDP systeem verscheidene vormen van inferentie toepassen op de theorie. Met inferentie wordt bedoeld vragen over het probleem oplossen. Door deze opsplitsing is de vorm van inferentie niet langer gebonden aan het systeem. IDP is in staat om verschillende soorten vragen over het probleem te beantwoorden zonder dat de kennis erover herschreven moet worden.
 
-IDP als kennis representatie systeem is ideaal voor het beschrijven van en later redeneren over configuratie problemen. In het verleden heeft men er al grote configuratie problemen uit de bedrijfswereld succesvol mee kunnen beschrijven en oplossen. Interessant is om te achterhalen of we dit voor het ISP selectie probleem ook kunnen doen. 
+Sinds het ontstaan van IDP zijn er reeds verschillende onderzoeken gedaan naar de prestaties van IDP op grote problemen \cite{van2016kb} \cite{vlaeminck2009logical}. De resultaten hiervan zijn positief, en ik wil graag te weten komen of dit voor het ISP probleem ook het geval is.
 
-Momenteel zijn er bij het opstellen van het ISP ook een aantal tekortkomingen die we met IDP zouden willen oplossen. Zo wordt het lessenrooster niet mee in rekening gebracht, waardoor studenten niet weten of ze opleidingsonderdelen opnemen waarvan de lessen mogelijk kunnen overlappen. En wat als er een foutieve selectie wordt gemaakt? Momenteel krijgt de student na het bevestigen van diens selectie een foutmelding en deze is vaak nog onduidelijk. IDP voorziet momenteel een aantal functies om de oorzaken van inconsistentie op te sporen at run-time. Handig zou zijn om hiermee korter op de bal te spelen en meteen bij een foutieve selectie uitleg te kunnen geven waarom de voorlopige huidige selectie niet correct is en hoe men dit kan oplossen.
+Er bestaat al een web applicatie die de studenten bijstaat tijdens het selectieproces van hun opleidingsonderdelen. Door gebruik te maken van de verschillende vormen van inferentie uit het IDP systeem, ben ik ervan overtuigd een applicatie te kunnen ontwikkelen die betere ondersteuning kan bieden en meer mogelijkheden heeft. 
 
-Naast dit alles heeft deze thesis nog een andere grote doelstelling. Het opsporen van oorzaken van inconsistenties ofwel conflict explanation is een gebied waar momenteel nog veel onderzoek gaande is. Enkele interessante technieken zijn hier al voorgelegd en het is in onze interesse om na te gaan of en hoe we deze kunnen integreren samen met het IDP systeem.
+Naast dit alles heeft deze thesis nog een andere grote doelstelling. Sinds een gebruiker verantwoordelijk is voor de selectie van waarden uit het domein, is het mogelijk dat deze combinaties van keuzes nooit een geldige oplossing kunnen zijn volgens de regels. Conflict Explanation is een sub-domein binnen interactive configuration waar de focus ligt op het proberen verklaring van deze ongeldigheden of conflicten. En het is mijn doel om de mogelijkheden van hieromtrent IDP te testen en daarnaast op zoek te gaan naar andere methoden die aan IDP kunnen bijdragen.
 \end{abstract}
 
 % A list of figures and tables is optional

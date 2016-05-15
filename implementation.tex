@@ -34,8 +34,7 @@ De predicaten zijn opgedeeld in twee verzamelingen, de eerste omvat alle predica
 \item [Verplicht(Vak,Fase)] Vakken die behoren tot een vakgroep kunnen mogelijk verplicht, m.a.w. de student zal ze moeten opnemen.
 \end{description}
 
-De tweede verzameling zijn de predicaten waarvan de waarheidswaarde op voorhand niet gekend is, en waarvan verwacht wordt dat de gebruiker deze stap per stap invult. 
-Hiertoe behoren slechts twee predicaten namelijk Geselecteerd(Vak,Fase) en GeenInteresse(Vak). Geselecteerd/2 geeft aan welke vakken de student wenst op te nemen tijdens de opleiding. GeenInteresse/1 daarentegen is eigenlijk een predicaat waarmee aangegeven kan worden dat een student helemaal geen interesse heeft om een vak te volgen. Dit is vooral handig als de student een geldige selectie wil laten genereren door het systeem waarbij hij/zij op voorhand kan aangeven dat deze selectie zeker niet de vakken kiest waarin de student geen interesse heeft. Het is niet verplicht dat de gebruiker invulling geeft aan dit predicaat. Door aan te geven dat de student geen interesse heeft om een bepaald vak te volgen kan het systeem afleiden dat er geen fases zijn waarin het vak geselecteerd kan worden.
+De tweede verzameling zijn de predicaten waarvan de waarheidswaarde op voorhand niet gekend is, en waarvan verwacht wordt dat de gebruiker deze stap per stap invult. Hiertoe behoren slechts twee predicaten namelijk Geselecteerd(Vak,Fase) en GeenInteresse(Vak). Geselecteerd/2 geeft aan welke vakken de student wenst op te nemen tijdens de opleiding. GeenInteresse/1 daarentegen is eigenlijk een predicaat waarmee aangegeven kan worden dat een student helemaal geen interesse heeft om een vak te volgen. Dit is vooral handig als de student een geldige selectie wil laten genereren door het systeem waarbij hij/zij op voorhand kan aangeven dat deze selectie zeker niet de vakken kiest waarin de student geen interesse heeft. Het is niet verplicht dat de gebruiker invulling geeft aan dit predicaat. Door aan te geven dat de student geen interesse heeft om een bepaald vak te volgen kan het systeem afleiden dat er geen fases zijn waarin het vak geselecteerd kan worden.
 
 \subsubsection{Functies}
 De functies koppelen een bepaald resultaat aan een combinatie van waarden uit het domein. Zo geven de functies MinAantalStudiepunten(VakGroep):Studiepunten en MaxAantalStudiepunten(VakGroep):Studiepunten respectievelijk het minumum en het maximum aantal studiepunten weer dat de student verplicht is te selecteren. Deze relaties zijn gekend op voorhand door het systeem en de student moet uiteraard trachten zich hieraan te houden. GeselecteerdAantalStudiepuntenPerVakGroep(VakGroep):Studiepunten is de relatie tussen het de som van de studiepunten van de vakken die reeds geselecteerd zijn die behoren tot de betreffende vakgroep. Naargelang de selectie kunnen deze waarden verschillen aangezien ze afhankelijk zijn van de keuze van de gebruiker. In het vocabularium zijn meerdere functies terug te vinden die gelijkaardige relaties uitdrukken zoals hierboven beschreven. 
@@ -44,10 +43,12 @@ De functies koppelen een bepaald resultaat aan een combinatie van waarden uit he
 Herinner dat het samenstellen van het ISP een interactief configuratieprobleem is, en om aan de eigenschappen van zo'n IC probleem te kunnen voldoen moet de reactietijd van de inferentiemethoden snel genoeg zijn. Met snel genoeg bedoelen we niet meer dan enkele seconden en in sommige gevallen zelfs nog minder. Afhankelijk van hoe frequent sommige methodes gebruikt worden kunnen de eisen omtrent reactietijd verschillen. Om dit te testen heb ik een front-end applicatie ontwikkeld die met behulp van een grafische interface een student toelaat een ISP samen te stellen. Deze input wordt vertaald naar FO(\textperiodcentered) en doorgespeeld naar IDP. Vervolgens voert IDP inferentie uit en de resultaten hiervan worden terug doorgespeeld naar de front-end, die het resultaat zal weergeven d.m.v. de GUI. Zo kunnen de prestaties van IDP in een gebruiksvriendelijke omgeving getest worden. 
 
 \subsection{Grafische Gebruikersinterface}
-De interface van de applicatie ziet er gelijkaardig uit aan die van de bestaande web applicatie. Hierdoor kunnen potenti\"{e}le gebruikers die bekend zijn met de web applicatie snel vertrouwd geraken met het nieuwe systeem. 
+De interface van de applicatie ziet er deels gelijkaardig uit aan die van de bestaande web applicatie. Hierdoor kunnen potenti\"{e}le gebruikers die bekend zijn met de web applicatie snel vertrouwd geraken met het nieuwe systeem. 
 
-/*BESCHRIJVING?*/
+\paragraph{Indeling}
+Om te beginnen is de interface opgedeeld in twee hoofd-interfaces, deze zijn van elkaar gescheiden door tabs. De eerste interface is die waar de opleiding samengesteld kan worden. Een voorbeeld hiervan is te zien in \ref{fig:sc1}. Ze bestaat uit drie delen, rechts is er de geschiedenisbalk, centraal het keuzegedeelte en onderaan de balk met functietoetsen. 
 
+/*ADD MORE*/
 
 \subsection{Communicatie tussen Front- en Back-end}
 Niet alleen is de syntax tussen IDP en Python compleet verschillend, het zijn ook twee verschillende klassen van programmeertalen respectievelijk declaratief en objectgeori\"{e}nteerd. Dus communicatie tussen de twee talen is niet vanzelfsprekend. Een Python API die toelaat IDP te gebruiken is reeds ontwikkeld \citep{vennekens2015lowering}. Het doel van de API is om de kloof tussen de declaratieve omgeving van IDP en Python kleiner te maken. Door een populaire programmeertaal te kiezen hoopt de auteur dat informatici met een achtergrond in declaratieve talen en logica sneller van IDP gebruik zullen maken zelfs als ze de syntax van IDP niet meester zijn. Persoonlijk heb ik wel al ervaring met IDP en heb dus geopteerd om geen gebruik te maken van de API. 
@@ -127,8 +128,7 @@ De eerste strategie houdt in dat als een actie ongedaan gemaakt wordt de interpr
 \end{algorithm}
 
 \paragraph{Strategie 1b}
-Bij de voorgaande strategie staat een actie ongedaan maken gelijk aan simpelweg de klok terugdraaien en W$\textsubscript{i}$ vervangen door W$\textsubscript{i-1}$. Dus eventuele propagaties die volgden uit de keuze van de gebruiker in de actie worden ook ongedaan gemaakt. En in plaats van alles simpelweg ongedaan te maken zou het beter zijn als de gebruiker de keuze krijgt om eventuele propagaties te behouden. Dit zorgt echter voor het volgende probleem. De assumptie is dat acties handelingen weergeven in de tijd gemaakt door de gebruiker, het ongedaan maken van handelingen wordt dus gezien als het terugdraaien van de tijd. Maar als de gebruiker kiest om een actie ongedaan te maken en tegelijk eventuele propagaties toch wil behouden dan geldt deze assumptie niet meer. In \ref{alg:MaakActieOngedaan} staat beschreven hoe dit probleem opgelost kan worden. 
-Het is simpelweg een uitbreiding op de eerste strategie, een actie wordt nog altijd verwijderd en de laatste interpretatie W$\textsubscript{i}$ wordt vervangen door de voorgaande W$\textsubscript{i-1}$. Maar waar het hier voorheen stopte gebeurt er nu het volgend. Er wordt gecontroleerd of er een set van predicaten V bestaat die zowel toebehoren aan O$\textsubscript{i-1}$ en P$\textsubscript{i}$. Ofwel predicaten waarvoor de waarheidswaarde eerst onbekend was en daarna een meer specifieke waarheidswaarde hebben gekregen d.m.v. propagatie als gevolg van de keuze van de gebruiker. Is deze set niet leeg dan zal de gebruiker moeten kiezen in \emph{KeuzeGebruiker} welke van de propagaties te houden. In het geval dat de gebruik kiest om propagaties te behouden, worden deze niet langer gezien als propagaties maar eerder als keuzes gemaakt door de gebruiker. Deze worden toegevoegd een de verzameling U en dit wordt gezien als een nieuwe handeling in het selectieproces waarvoor een nieuwe actie gecre\"{e}erd zal worden.
+Bij de voorgaande strategie staat een actie ongedaan maken gelijk aan simpelweg de klok terugdraaien en W$\textsubscript{i}$ vervangen door W$\textsubscript{i-1}$. Dus eventuele propagaties die volgden uit de keuze van de gebruiker in de actie worden ook ongedaan gemaakt. En in plaats van alles simpelweg ongedaan te maken zou het beter zijn als de gebruiker de keuze krijgt om eventuele propagaties te behouden. Dit zorgt echter voor het volgende probleem. De assumptie is dat acties handelingen weergeven in de tijd gemaakt door de gebruiker, het ongedaan maken van handelingen wordt dus gezien als het terugdraaien van de tijd. Maar als de gebruiker kiest om een actie ongedaan te maken en tegelijk eventuele propagaties toch wil behouden dan geldt deze assumptie niet meer. In \ref{alg:Strategie1b} staat beschreven hoe dit probleem opgelost kan worden. Het is simpelweg een uitbreiding op de eerste strategie, een actie wordt nog altijd verwijderd en de laatste interpretatie W$\textsubscript{i}$ wordt vervangen door de voorgaande W$\textsubscript{i-1}$. Maar waar het hier voorheen stopte gebeurt er nu het volgend. Er wordt gecontroleerd of er een set van predicaten V bestaat die zowel toebehoren aan O$\textsubscript{i-1}$ en P$\textsubscript{i}$. Ofwel predicaten waarvoor de waarheidswaarde eerst onbekend was en daarna een meer specifieke waarheidswaarde hebben gekregen d.m.v. propagatie als gevolg van de keuze van de gebruiker. Is deze set niet leeg dan zal de gebruiker moeten kiezen in \emph{KeuzeGebruiker} welke van de propagaties te houden. In het geval dat de gebruik kiest om propagaties te behouden, worden deze niet langer gezien als propagaties maar eerder als keuzes gemaakt door de gebruiker. Deze worden toegevoegd een de verzameling U en dit wordt gezien als een nieuwe handeling in het selectieproces waarvoor een nieuwe actie gecre\"{e}erd zal worden.
 
 \begin{algorithm}
 	\SetKwInOut{Input}{Input}
@@ -228,11 +228,69 @@ De unsatstructure is zeker een belangrijk onderdeel van het IDP systeem. En hoew
 
 In \citep{amilhastre2002consistency} wordt getoond hoe de oplossingsverzameling van een CSP voorgesteld kan worden door een eindige toestandsautomaat. Deze automaat, die vooraf berekend wordt kan vervolgens gebruikt worden om tijdens het selectieproces de complixiteit van de bewerkingen van verscheidene inferentie taken te reduceren en zo de reactietijd aanzienlijk te verbeteren. E\'{e}n van deze taken is het voorzien van oplossingen in geval van een niet-satisfieerbare selectie, en dit is exact hetgeen waar naar we op zoek zijn. De focus van de paper ligt op het reduceren van de complexiteit van de bewerkingen gedurende het selectieproces met behulp van de vooraf berekende automaat. En hoewel dit niet de focus is van dit onderzoek, biedt de techniek wel de inferentie taak aan die we zoeken. En met de garantie, zo stelt de paper dat de complexiteit van de bewerkingen aanzienlijk lager ligt dan normaal. 
 
-De automaat is een compacte voorstelling van de oplossingsverzameling van een configuratieprobleem. Elk pad is een combinatie van waarden uit het domein van de variabelen die samen een correcte interpretatie vormen volgens de theorie. De voorstelling van IDP is echter anders, hierbij geeft de gebruiker invulling d.m.v. toekenning van waarheidswaarden aan de verzameling van predicaten Geselecteerd(Vak,Fase). Als de student dus waarheidswaarde true toekent aan het predicaat Geselecteerd(G0Q66C,2), betekent dit dat de student het vak 'Fundamenten van Computergrafiek' wil volgen in de 2de fase van de opleiding. Door elk uniek vak voor te stellen als variabele met als domein de mogelijke fases waarin ze gegeven worden krijgen we een formaat dat nodig is voor de automaat. Voor elk vak dient 0 toegevoegd te worden aan het domein, dit voor wanneer een vak niet geselecteerd is door de gebruiker.
+De automaat is een compacte voorstelling van de oplossingsverzameling van een configuratieprobleem. Elk pad is een combinatie van waarden uit het domein van de variabelen die samen een correcte interpretatie vormen volgens de theorie. De voorstelling van IDP is echter anders, hierbij geeft de gebruiker invulling d.m.v. toekenning van waarheidswaarden aan de verzameling van predicaten Geselecteerd(Vak,Fase). Als de student dus waarheidswaarde true toekent aan het predicaat Geselecteerd(G0Q66C,2), betekent dit dat de student het vak 'Fundamenten van Computergrafiek' wil volgen in de 2de fase van de opleiding. Door elk uniek vak voor te stellen als variabele met als domein de mogelijke fases waarin ze gegeven worden krijgen we een formaat dat nodig is voor de automaat. Voor elk vak dient 0 toegevoegd te worden aan het domein, dit voor wanneer een vak niet geselecteerd is door de gebruiker. Via dit formaat van conversie is het dus mogelijk om de automaat te construeren en er mee te communiceren.
 
 \begin{lstlisting}[mathescape, caption=IDP Syntax conversion, frame=single]
 Vak = {G0Q66C;...} $\rightarrow$ V$\textsubscript{G0Q66C}$
 InFase = {G0Q66C,1;G0Q66C,2;...} $\rightarrow$ D$\textsubscript{V\textsubscript{G0Q66C}}$ = {0,1,2}
 \end{lstlisting}
 
-Via dit formaat van conversie is het dus mogelijk om de automaat te construeren en er mee te communiceren. In geval van een niet-satisfieerbare selectie zal de techniek volgens Amilhastre alle minimale oplossingen zoeken voor het probleem. Nog een voordeel van de automaat is dat ze werkt op basis van gewichten. Standaard heeft elk vak dezelfde voorkeur (gewicht) van 1, hierdoor is een minimale oplossing een oplossing waarbij zo weinig mogelijk keuzes ongedaan gemaakt worden. Maar door de gewichten in de automaat aan te passen kunnen voorkeuren mee in rekening worden gebracht, dit zal een effect hebben op de minimale oplossingen. Het aanpassen van deze gewichten vereist geen herberekening van de automaat en is ook geen kostelijke operatie. /*INSERT SMALL EXAMPLE*/
+De constructie bestaat uit een aantal stappen, te beginnen bij het opsommen van alle mogelijk oplossingen. Dit gebeurt in IDP door simpelweg model expansie aan te roepen en alle oplossingen op te sommen. De output van \'{e}\'{e}n geldige oplossing ziet er als volgt uit:
+\begin{lstlisting}[mathescape, caption=IDP model, frame=single]
+Geselecteerd = { "G0B36A",1; "G0G88A",1; "G0Q66C",1; 
+"H02A8A",1; "H02C1A",1; "H02C3A",1; "H02C8A",1; "H02D2A",1;
+"H04I0A",1; "H04I2A",1; "H04I4A",1; "H0T25A",1 }
+\end{lstlisting}
+Dit formaat wordt vervolgens omgevormd en weggeschreven in een tabel \ref{oplossingen}. Vakken die niet in de verzameling staan zijn niet geselecteerd, in de tabel staat er dan een 0 in de kolom van het vak. De waarden uit de tabel worden dan vervolgens gebruikt om de een automaat mee te bouwen. De automaat is niet minimaal, dit wordt gedaan volgens het Hopcroft algoritme wat ons uiteindelijk de automaat geeft die nodig is voor de implementatie.
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwInOut{Output}{Output}
+	\underline{function BouwAutomaat} (I,F,T)\;
+	\Input{I de begintoestand, 
+	F de eindtoestand,
+	T de tabel met oplossingen}
+	\Output{A de automaat}
+	R $\leftarrow$ T.width \;
+	K $\leftarrow$ T.length \;
+	H $\leftarrow$ I \;
+	\For{i = 0, i < R, i++}
+		{
+		\For{j = 0, j < K, j++}
+			{
+			V $\leftarrow$ T[i][j] \;
+			\If{!H.heeftOvergang(V)} 
+				{
+				\eIf {j < K-1} 
+					{
+					S $\leftarrow$ Toestand() \;
+					}
+					{
+					S $\leftarrow$ F \;
+					}
+				T $\leftarrow$ Overgang(V,S) \;
+				H.nieuweOvergang(T) \;
+				}
+			H $\leftarrow$ H.volg(V) \;
+			}
+		H $\leftarrow$ I \;
+		}
+	A $\leftarrow$ Automaat() \;
+	A.beginToestand(I) \;
+	return A \;
+	\caption{Constructie Automaat\label{alg:fsaConstruction}}
+\end{algorithm}
+
+\begin{table}[]
+\centering
+\caption{Tabel van oplossingen}
+\label{oplossingen}
+\begin{tabular}{|c|c|c|c|c|c|c}
+\hline
+G0B36A & G0Q66C & H02A8A & H09B5A & G0G88A & H02C1A &  \\ \hline
+1 & 1 & 1 & 0 & 1 & 1 &  \\ \hline
+ &  &  &  &  &  & 
+\end{tabular}
+\end{table}
+
+In geval van een niet-satisfieerbare selectie zal de techniek volgens Amilhastre alle minimale oplossingen zoeken voor het probleem. Nog een voordeel van de automaat is dat ze werkt op basis van gewichten. Standaard heeft elk vak dezelfde voorkeur (gewicht) van 1, hierdoor is een minimale oplossing een oplossing waarbij zo weinig mogelijk keuzes ongedaan gemaakt worden. Maar door de gewichten in de automaat aan te passen kunnen voorkeuren mee in rekening worden gebracht, dit zal een effect hebben op de minimale oplossingen. Het aanpassen van deze gewichten vereist geen herberekening van de automaat en is ook geen kostelijke operatie. /*INSERT SMALL EXAMPLE*/

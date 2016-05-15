@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  14 MAY 2016 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  15 MAY 2016 21:50
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
@@ -832,30 +832,25 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count179
 \algocf@algoframe=\box42
 \algocf@algobox=\box43
-)
-("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.st
-y"
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count180
 ) (Thesistekst.aux (intro.aux) (implementation.aux) (evaluation.aux)
 (conclusion.aux) (relatedwork.aux) (futurework.aux))
 \openout1 = `Thesistekst.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -863,16 +858,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count181
+\scratchcounter=\count180
 \scratchdimen=\dimen178
 \scratchbox=\box44
-\nofMPsegments=\count182
-\nofMParguments=\count183
+\nofMPsegments=\count181
+\nofMParguments=\count182
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count184
+\MPscratchCnt=\count183
 \MPscratchDim=\dimen179
-\MPnumerator=\count185
-\makeMPintoPDFobject=\count186
+\MPnumerator=\count184
+\makeMPintoPDFobject=\count185
 \everyMPtoPDFconversion=\toks34
 )
 
@@ -895,7 +890,7 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-LaTeX Info: Redefining \microtypecontext on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 37.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -912,7 +907,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 54.
+Package hyperref Info: Link coloring ON on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref
 .sty"
@@ -922,48 +917,48 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 tlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count187
+\c@section@level=\count186
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 54.
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 (Thesistekst.out) (Thesistekst.out)
 \@outlinefile=\write4
 \openout4 = `Thesistekst.out'.
 
-\c@lstlisting=\count188
+\c@lstlisting=\count187
 Package microtype Info: Loading generic settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=75, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=71, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
-Package pdftex.def Info: logokuleng.pdf used on input line 54.
+Package pdftex.def Info: logokuleng.pdf used on input line 37.
 (pdftex.def)             Requested size: 159.33542pt x 85.3617pt.
  [-1
 
 
 {C:/Users/Herbert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
 Herbert/School/KUL/Master/Thesis/TeX/tex/latex/kulemt/logokuleng.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 37.
 
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 54.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 54.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 37.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1025,13 +1020,22 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )) [2
 
 
-] [3
+]
+
+Package natbib Warning: Citation `van2016kb' on page iii undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `vlaeminck2009logical' on page iii undefined o
+n input line 49.
+
+[3
 
 ] (Thesistekst.lof) (Thesistekst.lot) [4
 
 
 ]
-Overfull \hbox (0.86812pt too wide) in paragraph at lines 101--101
+Overfull \hbox (0.86812pt too wide) in paragraph at lines 83--83
 []|\T1/lmr/m/n/10.95 (-20) ``The Answer to the Ultimate Question of Life, the U
 niverse, and Everything''
  []
@@ -1045,6 +1049,14 @@ niverse, and Everything''
 
  (intro.tex
 
+Package natbib Warning: Citation `gelle1996interactive' on page 1 undefined on 
+input line 9.
+
+
+Package natbib Warning: Citation `gelle1996interactive' on page 1 undefined on 
+input line 9.
+
+
 Package natbib Warning: Citation `vlaeminck2009logical' on page 1 undefined on 
 input line 9.
 
@@ -1052,6 +1064,10 @@ input line 9.
 
 
 ]
+
+Package natbib Warning: Citation `denecker2008building' on page 2 undefined on 
+input line 12.
+
 
 Package natbib Warning: Citation `de2014separating' on page 2 undefined on inpu
 t line 12.
@@ -1104,12 +1120,15 @@ d on input line 43.
 
 
 
-] [7] [8] [9] [10] [11] [12]
+] [7] [8] [9]
 
-LaTeX Warning: Reference `alg:MaakActieOngedaan' on page 13 undefined on input 
-line 130.
+LaTeX Warning: Reference `fig:sc1' on page 10 undefined on input line 49.
 
-[13] [14] [15]
+
+Package natbib Warning: Citation `vennekens2015lowering' on page 10 undefined o
+n input line 54.
+
+[10] [11] [12] [13] [14] [15]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 200.
  [16]
@@ -1137,19 +1156,24 @@ ed on input line 229.
 [18]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 235.
-) [19]
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 284.
+
+) [19] [20]
 \openout2 = `evaluation.aux'.
 
- (evaluation.tex [20
-
-
-
-]
+ (evaluation.tex
 
 Package natbib Warning: Citation `amilhastre2002consistency' on page 21 undefin
 ed on input line 3.
 
-[21]
+[21
+
+
+
+]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 14.
@@ -1178,8 +1202,16 @@ Package natbib Warning: Citation `de2014predicate' on page 27 undefined on inpu
 t line 4.
 
 
+Package natbib Warning: Citation `gelle1996interactive' on page 27 undefined on
+ input line 8.
+
+
 Package natbib Warning: Citation `de2014predicate' on page 27 undefined on inpu
 t line 8.
+
+
+Package natbib Warning: Citation `denecker2008building' on page 27 undefined on
+ input line 8.
 
 
 Package natbib Warning: Citation `van2016kb' on page 27 undefined on input line
@@ -1198,22 +1230,22 @@ ed on input line 8.
 
  (relatedwork.tex
 
-Package natbib Warning: Citation `decat14' on page 29 undefined on input line 4
-.
+Package natbib Warning: Citation `de2014separating' on page 29 undefined on inp
+ut line 5.
 
 
-Overfull \hbox (8.15419pt too wide) in paragraph at lines 4--5
+Overfull \hbox (8.15419pt too wide) in paragraph at lines 5--6
 \T1/lmr/bx/n/10.95 Sys-tem and its Model Ex-pan-sion In-fer-ence ?[] \T1/lmr/m/
 n/10.95 (-20) Bin-nen het domein van declaratief
  []
 
 
-Package natbib Warning: Citation `vanhertum' on page 29 undefined on input line
- 7.
+Package natbib Warning: Citation `van2016kb' on page 29 undefined on input line
+ 8.
 
 
-Package natbib Warning: Citation `gelle96' on page 29 undefined on input line 7
-.
+Package natbib Warning: Citation `gelle1996interactive' on page 29 undefined on
+ input line 8.
 
 [29
 
@@ -1221,26 +1253,26 @@ Package natbib Warning: Citation `gelle96' on page 29 undefined on input line 7
 
 ]
 
-Package natbib Warning: Citation `vlaeminck09' on page 30 undefined on input li
-ne 10.
+Package natbib Warning: Citation `vlaeminck2009logical' on page 30 undefined on
+ input line 11.
 
 
-Package natbib Warning: Citation `bogaerts14' on page 30 undefined on input lin
-e 13.
+Package natbib Warning: Citation `de2014predicate' on page 30 undefined on inpu
+t line 14.
 
 [30]
 
-Package natbib Warning: Citation `amilhastre01' on page 31 undefined on input l
-ine 17.
+Package natbib Warning: Citation `amilhastre2002consistency' on page 31 undefin
+ed on input line 18.
 
 
-Package natbib Warning: Citation `vennekens15' on page 31 undefined on input li
-ne 20.
+Package natbib Warning: Citation `vennekens2015lowering' on page 31 undefined o
+n input line 21.
 
 [31]
 
-Package natbib Warning: Citation `ocallaghan05' on page 32 undefined on input l
-ine 25.
+Package natbib Warning: Citation `o2005generating' on page 32 undefined on inpu
+t line 26.
 
 ) [32]
 \openout2 = `futurework.aux'.
@@ -1252,9 +1284,9 @@ ine 25.
 ] [34
 
 
-] (Thesistekst.bbl) [35
-
-] [36
+]
+No file Thesistekst.bbl.
+[35
 
 ]
 
@@ -1269,32 +1301,32 @@ Package natbib Warning: There were undefined citations.
 \tf@lot=\write7
 \openout7 = `Thesistekst.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 (Thesistekst.aux (intro.aux) (implementation.aux) (evaluation.aux)
 (conclusion.aux) (relatedwork.aux) (futurework.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `Thesistekst.out' has not changed.
-(rerunfilecheck)             Checksum: 6639CA38D8D8E3F67B92779B9D973F17;986.
+(rerunfilecheck)             Checksum: 10A7ED1CA2FEB21A847EEB6C1279AF6F;935.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15484 strings out of 493634
- 227859 string characters out of 3134423
- 513143 words of memory out of 3000000
- 18303 multiletter control sequences out of 15000+200000
- 91325 words of font info for 121 fonts, out of 3000000 for 9000
+ 15299 strings out of 493634
+ 225433 string characters out of 3134423
+ 416067 words of memory out of 3000000
+ 18096 multiletter control sequences out of 15000+200000
+ 91455 words of font info for 122 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,18n,35p,2858b,3318s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,21n,40p,2858b,3129s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ec.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-rm.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/e
@@ -1318,9 +1350,9 @@ nts/type1/public/lm/lmtt10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Herbert/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (44 pages, 455248 bytes).
+Output written on Thesistekst.pdf (43 pages, 457423 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 21654 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 21646 words of extra memory for PDF output out of 24883 (max. 10000000)
 
