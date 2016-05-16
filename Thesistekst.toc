@@ -58,14 +58,14 @@
 \contentsline {paragraph}{Proof of concept}{27}{section*.24}
 \contentsline {paragraph}{Conflict explanation}{27}{section*.25}
 \contentsline {chapter}{\chapternumberline {5}Related Work}{29}{chapter.5}
-\contentsline {paragraph}{Separating Knowledge from Computation: An FO(\textperiodcentered ) Knowledge Base System and its Model Expansion Inference \cite {de2014separating}}{29}{section*.26}
-\contentsline {paragraph}{The KB Paradigm and its Application to Interactive Configuration \cite {van2016kb}}{29}{section*.27}
-\contentsline {paragraph}{A Logical Framework for Configuration Software \cite {vlaeminck2009logical}}{30}{section*.28}
-\contentsline {paragraph}{Predicate Logic as a Modelling Language: The IDP System \cite {de2014predicate}}{30}{section*.29}
+\contentsline {paragraph}{Predicate Logic as a Modelling Language: The IDP System \cite {de2014predicate}}{29}{section*.26}
+\contentsline {paragraph}{Separating Knowledge from Computation: An FO(\textperiodcentered ) Knowledge Base System and its Model Expansion Inference \cite {de2014separating}}{30}{section*.27}
+\contentsline {paragraph}{The KB Paradigm and its Application to Interactive Configuration \cite {van2016kb}}{30}{section*.28}
+\contentsline {paragraph}{A Logical Framework for Configuration Software \cite {vlaeminck2009logical}}{31}{section*.29}
 \contentsline {paragraph}{Consistency Restoration and Explanations in Dynamic CSP's: Application to Configuration \cite {amilhastre2002consistency}}{31}{section*.30}
-\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{31}{section*.31}
+\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{32}{section*.31}
 \contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {o2005generating}}{32}{section*.32}
-\contentsline {chapter}{\chapternumberline {6}Future Work}{33}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}Future Work}{35}{chapter.6}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}

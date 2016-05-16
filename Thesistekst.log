@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  15 MAY 2016 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  16 MAY 2016 16:51
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
@@ -1230,63 +1230,85 @@ ed on input line 8.
 
  (relatedwork.tex
 
+Package natbib Warning: Citation `de2014predicate' on page 29 undefined on inpu
+t line 5.
+
+
 Package natbib Warning: Citation `de2014separating' on page 29 undefined on inp
-ut line 5.
+ut line 8.
 
 
-Overfull \hbox (8.15419pt too wide) in paragraph at lines 5--6
+Overfull \hbox (8.15419pt too wide) in paragraph at lines 8--9
 \T1/lmr/bx/n/10.95 Sys-tem and its Model Ex-pan-sion In-fer-ence ?[] \T1/lmr/m/
 n/10.95 (-20) Bin-nen het domein van declaratief
  []
 
 
-Package natbib Warning: Citation `van2016kb' on page 29 undefined on input line
- 8.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package natbib Warning: Citation `gelle1996interactive' on page 29 undefined on
- input line 8.
-
-[29
+ [29
 
 
 
 ]
 
+Package natbib Warning: Citation `van2016kb' on page 30 undefined on input line
+ 13.
+
+
+Package natbib Warning: Citation `de2014separating' on page 30 undefined on inp
+ut line 13.
+
+
+Package natbib Warning: Citation `denecker2008building' on page 30 undefined on
+ input line 13.
+
+
+Package natbib Warning: Citation `felfernig2001intelligent' on page 30 undefine
+d on input line 13.
+
+
+Package natbib Warning: Citation `van2016kb' on page 30 undefined on input line
+ 15.
+
+
 Package natbib Warning: Citation `vlaeminck2009logical' on page 30 undefined on
- input line 11.
+ input line 18.
 
 
-Package natbib Warning: Citation `de2014predicate' on page 30 undefined on inpu
-t line 14.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[30]
+ [30]
 
 Package natbib Warning: Citation `amilhastre2002consistency' on page 31 undefin
-ed on input line 18.
-
-
-Package natbib Warning: Citation `vennekens2015lowering' on page 31 undefined o
-n input line 21.
+ed on input line 23.
 
 [31]
 
-Package natbib Warning: Citation `o2005generating' on page 32 undefined on inpu
-t line 26.
+Package natbib Warning: Citation `vennekens2015lowering' on page 32 undefined o
+n input line 28.
 
-) [32]
+
+Package natbib Warning: Citation `o2005generating' on page 32 undefined on inpu
+t line 34.
+
+
+Package natbib Warning: Citation `amilhastre2002consistency' on page 32 undefin
+ed on input line 36.
+
+) [32] [33]
 \openout2 = `futurework.aux'.
 
- (futurework.tex) [33
+ (futurework.tex [34
 
 
 
-] [34
+]) [35] [36
 
 
 ]
 No file Thesistekst.bbl.
-[35
+[37
 
 ]
 
@@ -1313,6 +1335,9 @@ Package rerunfilecheck Info: File `Thesistekst.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  )
 (\end occurred inside a group at level 1)
@@ -1320,8 +1345,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15299 strings out of 493634
- 225433 string characters out of 3134423
+ 15301 strings out of 493634
+ 225447 string characters out of 3134423
  416067 words of memory out of 3000000
  18096 multiletter control sequences out of 15000+200000
  91455 words of font info for 122 fonts, out of 3000000 for 9000
@@ -1350,9 +1375,9 @@ nts/type1/public/lm/lmtt10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Herbert/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (43 pages, 457423 bytes).
+Output written on Thesistekst.pdf (45 pages, 460268 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 213 named destinations out of 1000 (max. 500000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
  21646 words of extra memory for PDF output out of 24883 (max. 10000000)
 
