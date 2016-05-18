@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  16 MAY 2016 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  18 MAY 2016 14:57
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
@@ -592,7 +592,7 @@ f.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `pdfusetitle' set `true' on input line 4319.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4319.
 Package hyperref Info: Option `plainpages' set `false' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
@@ -616,7 +616,7 @@ Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
 Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6315.
 Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
@@ -907,7 +907,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref
 .sty"
@@ -1103,15 +1103,15 @@ Package natbib Warning: Citation `felfernig2001intelligent' on page 3 undefined
 [3]
 
 Package natbib Warning: Citation `amilhastre2002consistency' on page 4 undefine
-d on input line 36.
+d on input line 38.
 
 [4]
 LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 40.
+(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 42.
 
 
 Package natbib Warning: Citation `amilhastre2002consistency' on page 5 undefine
-d on input line 43.
+d on input line 45.
 
 ) [5]
 \openout2 = `implementation.aux'.
@@ -1120,48 +1120,53 @@ d on input line 43.
 
 
 
-] [7] [8] [9]
-
-LaTeX Warning: Reference `fig:sc1' on page 10 undefined on input line 49.
-
-
-Package natbib Warning: Citation `vennekens2015lowering' on page 10 undefined o
-n input line 54.
-
-[10] [11] [12] [13] [14] [15]
+] [7] [8] [9] [10] [11] [12] [13] [14]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 200.
- [16]
-Overfull \hbox (37.32669pt too wide) in paragraph at lines 207--208
+nput line 184.
+ [15]
+Overfull \hbox (37.32669pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (276.0387pt too wide) in paragraph at lines 214--215
+Overfull \hbox (276.0387pt too wide) in paragraph at lines 198--199
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-LaTeX Warning: Reference `alg:Regel1' on page 17 undefined on input line 218.
-
-[17]
-Overfull \hbox (57.03685pt too wide) in paragraph at lines 220--221
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (318.13579pt too wide) in paragraph at lines 199--200
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
+LaTeX Warning: Reference `alg:Regel1' on page 16 undefined on input line 203.
+
+[16]
+Overfull \hbox (57.03685pt too wide) in paragraph at lines 205--206
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+
 Package natbib Warning: Citation `amilhastre2002consistency' on page 18 undefin
-ed on input line 229.
+ed on input line 214.
 
-[18]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 235.
-
+(Font)              <5> on input line 220.
+[18]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 284.
+               Default added (so using `tbp') on input line 269.
 
-) [19] [20]
+[19]
+
+LaTeX Warning: Reference `fig:sc1' on page 20 undefined on input line 288.
+
+
+Package natbib Warning: Citation `vennekens2015lowering' on page 20 undefined o
+n input line 293.
+
+) [20]
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
@@ -1335,9 +1340,6 @@ Package rerunfilecheck Info: File `Thesistekst.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  )
 (\end occurred inside a group at level 1)
@@ -1345,13 +1347,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15301 strings out of 493634
- 225447 string characters out of 3134423
- 416067 words of memory out of 3000000
- 18096 multiletter control sequences out of 15000+200000
- 91455 words of font info for 122 fonts, out of 3000000 for 9000
+ 15305 strings out of 493634
+ 225503 string characters out of 3134423
+ 416069 words of memory out of 3000000
+ 18098 multiletter control sequences out of 15000+200000
+ 91906 words of font info for 124 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 44i,21n,40p,2858b,3129s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,21n,40p,3170b,3122s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ec.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-rm.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/e
@@ -1372,12 +1374,13 @@ lmr6.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 blic/lm/lmri10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmsy10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/lm/lmtt10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Herbert/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (45 pages, 460268 bytes).
+2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Herbert/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Herb
+ert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Thesistekst.pdf (45 pages, 481870 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 215 named destinations out of 1000 (max. 500000)
- 21646 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
+ 22158 words of extra memory for PDF output out of 24883 (max. 10000000)
 
