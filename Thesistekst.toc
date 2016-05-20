@@ -14,57 +14,54 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {subsection}{\numberline {1.0.1}Constraint Satisfaction Problems}{1}{subsection.1.0.1}
 \contentsline {subsection}{\numberline {1.0.2}Interactive Configuration Problems}{1}{subsection.1.0.2}
-\contentsline {subsection}{\numberline {1.0.3}Knowledge Representation: Het IDP Systeem}{2}{subsection.1.0.3}
-\contentsline {section}{\numberline {1.1}Probleemstelling}{2}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Individueel Studieprogramma}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Conflict Explanation}{3}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Doel}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Dependencies}{5}{section.1.3}
-\contentsline {chapter}{\chapternumberline {2}Implementation}{7}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.1}Preliminaries}{7}{subsection.2.0.1}
-\contentsline {section}{\numberline {2.1}Constructie ISP Theory}{7}{section.2.1}
-\contentsline {paragraph}{Analyse van het ISP}{7}{section*.9}
-\contentsline {subsection}{\numberline {2.1.1}Vocabularium}{8}{subsection.2.1.1}
-\contentsline {subsubsection}{Types}{8}{section*.10}
-\contentsline {subsubsection}{Predicaten}{9}{section*.11}
-\contentsline {subsubsection}{Functies}{10}{section*.12}
-\contentsline {section}{\numberline {2.2}Front-End}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Features}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Selectieproces}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Propagatie}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Model Expansie}{11}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Minimizatie}{12}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Ongedaan Maken}{12}{subsection.2.3.5}
-\contentsline {paragraph}{Strategie 1a}{12}{section*.13}
-\contentsline {paragraph}{Strategie 1b}{12}{section*.14}
-\contentsline {paragraph}{Strategie 2}{14}{section*.15}
-\contentsline {section}{\numberline {2.4}Conflict Explanation}{14}{section.2.4}
-\contentsline {subsubsection}{Unsatstructure}{15}{section*.16}
-\contentsline {subsubsection}{Reified Constraints}{15}{section*.17}
-\contentsline {subsubsection}{Amilhastre}{17}{section*.18}
-\contentsline {subsection}{\numberline {2.4.1}Grafische Gebruikersinterface}{20}{subsection.2.4.1}
-\contentsline {paragraph}{Indeling}{20}{section*.19}
-\contentsline {subsection}{\numberline {2.4.2}Communicatie tussen Front- en Back-end}{20}{subsection.2.4.2}
-\contentsline {chapter}{\chapternumberline {3}Evaluation}{21}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Theorie van het ISP}{21}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}Front-End Applicatie}{21}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}Inferentie}{24}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}Conflict Explanation}{24}{subsection.3.0.4}
-\contentsline {subsubsection}{Unsatstructure}{24}{section*.20}
-\contentsline {subsubsection}{Reified Constraints}{24}{section*.21}
-\contentsline {subsubsection}{Amilhastre}{25}{section*.22}
-\contentsline {chapter}{\chapternumberline {4}Conclusion}{27}{chapter.4}
-\contentsline {paragraph}{Proof of concept}{27}{section*.23}
-\contentsline {paragraph}{Conflict explanation}{27}{section*.24}
-\contentsline {chapter}{\chapternumberline {5}Related Work}{29}{chapter.5}
-\contentsline {paragraph}{Predicate Logic as a Modelling Language: The IDP System \cite {de2014predicate}}{29}{section*.25}
-\contentsline {paragraph}{Separating Knowledge from Computation: An FO(\textperiodcentered ) Knowledge Base System and its Model Expansion Inference \cite {de2014separating}}{30}{section*.26}
-\contentsline {paragraph}{The KB Paradigm and its Application to Interactive Configuration \cite {van2016kb}}{30}{section*.27}
-\contentsline {paragraph}{A Logical Framework for Configuration Software \cite {vlaeminck2009logical}}{31}{section*.28}
-\contentsline {paragraph}{Consistency Restoration and Explanations in Dynamic CSP's: Application to Configuration \cite {amilhastre2002consistency}}{31}{section*.29}
-\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{32}{section*.30}
-\contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {o2005generating}}{32}{section*.31}
-\contentsline {chapter}{\chapternumberline {6}Future Work}{35}{chapter.6}
+\contentsline {subsection}{\numberline {1.0.3}Het IDP Systeem}{2}{subsection.1.0.3}
+\contentsline {section}{\numberline {1.1}Probleemstelling}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Individueel Studieprogramma}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Conflict Explanation}{4}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Doel}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Dependencies}{6}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Related Work}{7}{chapter.2}
+\contentsline {paragraph}{Consistency Restoration and Explanations in Dynamic CSP's: Application to Configuration \cite {amilhastre2002consistency}}{7}{section*.9}
+\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{7}{section*.10}
+\contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {o2005generating}}{8}{section*.11}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{9}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Preliminaries}{9}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}Constructie ISP Theory}{9}{section.3.1}
+\contentsline {paragraph}{Analyse van het ISP}{9}{section*.12}
+\contentsline {subsection}{\numberline {3.1.1}Vocabularium}{10}{subsection.3.1.1}
+\contentsline {subsubsection}{Types}{10}{section*.13}
+\contentsline {subsubsection}{Predicaten}{11}{section*.14}
+\contentsline {subsubsection}{Functies}{12}{section*.15}
+\contentsline {section}{\numberline {3.2}Features}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Selectieproces}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Propagatie}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Model Expansie}{13}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Minimizatie}{13}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Ongedaan Maken}{14}{subsection.3.2.5}
+\contentsline {paragraph}{Strategie 1a}{14}{section*.16}
+\contentsline {paragraph}{Strategie 1b}{14}{section*.17}
+\contentsline {paragraph}{Strategie 2}{15}{section*.18}
+\contentsline {section}{\numberline {3.3}Conflict Explanation}{16}{section.3.3}
+\contentsline {subsubsection}{Unsatstructure}{17}{section*.19}
+\contentsline {subsubsection}{Reified Constraints}{17}{section*.20}
+\contentsline {subsubsection}{Amilhastre}{19}{section*.21}
+\contentsline {section}{\numberline {3.4}Front-End}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Grafische Gebruikersinterface}{22}{subsection.3.4.1}
+\contentsline {paragraph}{Selectie venster}{22}{section*.22}
+\contentsline {paragraph}{Overzicht lessenrooster}{23}{section*.23}
+\contentsline {subsection}{\numberline {3.4.2}Communicatie tussen Front- en Back-end}{24}{subsection.3.4.2}
+\contentsline {chapter}{\chapternumberline {4}Evaluation}{25}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Theorie van het ISP}{25}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Front-End Applicatie}{25}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Inferentie}{28}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{28}{subsection.4.0.4}
+\contentsline {subsubsection}{Unsatstructure}{28}{section*.24}
+\contentsline {subsubsection}{Reified Constraints}{28}{section*.25}
+\contentsline {subsubsection}{Amilhastre}{29}{section*.26}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{31}{chapter.5}
+\contentsline {paragraph}{Proof of concept}{31}{section*.27}
+\contentsline {paragraph}{Conflict explanation}{31}{section*.28}
+\contentsline {chapter}{\chapternumberline {6}Future Work}{33}{chapter.6}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
