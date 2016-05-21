@@ -15,53 +15,52 @@
 \contentsline {subsection}{\numberline {1.0.1}Constraint Satisfaction Problems}{1}{subsection.1.0.1}
 \contentsline {subsection}{\numberline {1.0.2}Interactive Configuration Problems}{1}{subsection.1.0.2}
 \contentsline {subsection}{\numberline {1.0.3}Het IDP Systeem}{2}{subsection.1.0.3}
-\contentsline {section}{\numberline {1.1}Probleemstelling}{3}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Individueel Studieprogramma}{3}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Conflict Explanation}{4}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Doel}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Dependencies}{6}{section.1.3}
-\contentsline {chapter}{\chapternumberline {2}Related Work}{7}{chapter.2}
-\contentsline {paragraph}{Consistency Restoration and Explanations in Dynamic CSP's: Application to Configuration \cite {amilhastre2002consistency}}{7}{section*.9}
-\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{7}{section*.10}
-\contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {o2005generating}}{8}{section*.11}
-\contentsline {chapter}{\chapternumberline {3}Implementation}{9}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Preliminaries}{9}{subsection.3.0.1}
-\contentsline {section}{\numberline {3.1}Constructie ISP Theory}{9}{section.3.1}
-\contentsline {paragraph}{Analyse van het ISP}{9}{section*.12}
-\contentsline {subsection}{\numberline {3.1.1}Vocabularium}{10}{subsection.3.1.1}
-\contentsline {subsubsection}{Types}{10}{section*.13}
-\contentsline {subsubsection}{Predicaten}{11}{section*.14}
-\contentsline {subsubsection}{Functies}{12}{section*.15}
-\contentsline {section}{\numberline {3.2}Features}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Selectieproces}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Propagatie}{12}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Model Expansie}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Minimizatie}{13}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Ongedaan Maken}{14}{subsection.3.2.5}
-\contentsline {paragraph}{Strategie 1a}{14}{section*.16}
-\contentsline {paragraph}{Strategie 1b}{14}{section*.17}
-\contentsline {paragraph}{Strategie 2}{15}{section*.18}
-\contentsline {section}{\numberline {3.3}Conflict Explanation}{16}{section.3.3}
-\contentsline {subsubsection}{Unsatstructure}{17}{section*.19}
-\contentsline {subsubsection}{Reified Constraints}{17}{section*.20}
-\contentsline {subsubsection}{Amilhastre}{19}{section*.21}
-\contentsline {section}{\numberline {3.4}Front-End}{22}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Grafische Gebruikersinterface}{22}{subsection.3.4.1}
-\contentsline {paragraph}{Selectie venster}{22}{section*.22}
-\contentsline {paragraph}{Overzicht lessenrooster}{23}{section*.23}
-\contentsline {subsection}{\numberline {3.4.2}Communicatie tussen Front- en Back-end}{24}{subsection.3.4.2}
-\contentsline {chapter}{\chapternumberline {4}Evaluation}{25}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Theorie van het ISP}{25}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Front-End Applicatie}{25}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Inferentie}{28}{subsection.4.0.3}
-\contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{28}{subsection.4.0.4}
-\contentsline {subsubsection}{Unsatstructure}{28}{section*.24}
-\contentsline {subsubsection}{Reified Constraints}{28}{section*.25}
-\contentsline {subsubsection}{Amilhastre}{29}{section*.26}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{31}{chapter.5}
-\contentsline {paragraph}{Proof of concept}{31}{section*.27}
-\contentsline {paragraph}{Conflict explanation}{31}{section*.28}
-\contentsline {chapter}{\chapternumberline {6}Future Work}{33}{chapter.6}
+\contentsline {section}{\numberline {1.1}amilhastre}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Probleemstelling}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Individueel Studieprogramma}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Conflict Explanation}{5}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Doel}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Dependencies}{7}{section.1.4}
+\contentsline {chapter}{\chapternumberline {2}Related Work}{9}{chapter.2}
+\contentsline {paragraph}{Lowering the learning curve for declarative programming: a Python API for the IDP system \cite {vennekens2015lowering}}{9}{section*.9}
+\contentsline {paragraph}{Generating Corrective Explanations for Interactive Constraint Satisfaction \cite {o2005generating}}{9}{section*.10}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{11}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Preliminaries}{11}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}Constructie ISP Theory}{11}{section.3.1}
+\contentsline {paragraph}{Analyse van het ISP}{11}{section*.11}
+\contentsline {subsection}{\numberline {3.1.1}Vocabularium}{12}{subsection.3.1.1}
+\contentsline {subsubsection}{Types}{12}{section*.12}
+\contentsline {subsubsection}{Predicaten}{13}{section*.13}
+\contentsline {subsubsection}{Functies}{14}{section*.14}
+\contentsline {section}{\numberline {3.2}Features}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Selectieproces}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Propagatie}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Model Expansie}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Minimizatie}{15}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Ongedaan Maken}{16}{subsection.3.2.5}
+\contentsline {paragraph}{Strategie 1a}{16}{section*.15}
+\contentsline {paragraph}{Strategie 1b}{16}{section*.16}
+\contentsline {paragraph}{Strategie 2}{17}{section*.17}
+\contentsline {section}{\numberline {3.3}Conflict Explanation}{18}{section.3.3}
+\contentsline {subsubsection}{Unsatstructure}{19}{section*.18}
+\contentsline {subsubsection}{Reified Constraints}{19}{section*.19}
+\contentsline {subsubsection}{Amilhastre}{21}{section*.20}
+\contentsline {section}{\numberline {3.4}Front-End}{24}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Grafische Gebruikersinterface}{24}{subsection.3.4.1}
+\contentsline {paragraph}{Selectie venster}{24}{section*.21}
+\contentsline {paragraph}{Overzicht lessenrooster}{25}{section*.22}
+\contentsline {subsection}{\numberline {3.4.2}Communicatie tussen Front- en Back-end}{26}{subsection.3.4.2}
+\contentsline {chapter}{\chapternumberline {4}Evaluation}{27}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Theorie van het ISP}{27}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Front-End Applicatie}{27}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Inferentie}{30}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{30}{subsection.4.0.4}
+\contentsline {subsubsection}{Reified Constraints}{30}{section*.23}
+\contentsline {subsubsection}{Amilhastre}{31}{section*.24}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{33}{chapter.5}
+\contentsline {paragraph}{Proof of concept}{33}{section*.25}
+\contentsline {paragraph}{Conflict explanation}{33}{section*.26}
+\contentsline {chapter}{\chapternumberline {6}Future Work}{35}{chapter.6}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
