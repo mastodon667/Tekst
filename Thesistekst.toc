@@ -61,6 +61,7 @@
 \contentsline {paragraph}{Proof of concept}{33}{section*.24}
 \contentsline {paragraph}{Conflict explanation}{33}{section*.25}
 \contentsline {chapter}{\chapternumberline {6}Future Work}{35}{chapter.6}
+\contentsline {chapter}{Bibliography}{37}{section*.27}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
