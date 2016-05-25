@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  23 MAY 2016 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.14)  24 MAY 2016 16:54
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-(C:\Users\Herbert\School\KUL\Master\Thesis\TeX\tex\latex\kulemt\kulemt.cls
+(C:\Users\Herbert\School\Thesis\Tex\tex\latex\kulemt\kulemt.cls
 Document Class: kulemt 2015/05/25 v1.8 KU Leuven engineering master thesis docu
 ment class
 
@@ -24,7 +24,7 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 File: ascii.def 2015/03/17 v1.2c Input encoding file
 ))
 \kulemt@facnum=\count79
- (C:\Users\Herbert\School\KUL\Master\Thesis\TeX\tex\latex\kulemt\kulemt.cfg
+ (C:\Users\Herbert\School\Thesis\Tex\tex\latex\kulemt\kulemt.cfg
 File: kulemt.cfg 2013/05/01
 )
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\memoir\memoir.cl
@@ -498,27 +498,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 )
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype.sty"
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+Package: microtype 2016/05/01 v2.6 Micro-typographical refinements (RS)
 \MT@toks=\toks25
 \MT@count=\count140
-LaTeX Info: Redefining \textls on input line 766.
+LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen151
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count141
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype-pdftex.def"
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
+File: microtype-pdftex.def 2016/05/01 v2.6 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 916.
+LaTeX Info: Redefining \lslig on input line 916.
 \MT@outer@space=\skip185
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype.cfg"
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+File: microtype.cfg 2016/05/01 v2.6 microtype main configuration file (RS)
 ))
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperre
 f.sty"
@@ -944,7 +943,7 @@ Package pdftex.def Info: logokuleng.pdf used on input line 37.
 
 
 {C:/Users/Herbert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
-Herbert/School/KUL/Master/Thesis/TeX/tex/latex/kulemt/logokuleng.pdf>]
+Herbert/School/Thesis/Tex/tex/latex/kulemt/logokuleng.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
@@ -1101,7 +1100,7 @@ LaTeX Warning: No positions in optional float specifier.
 Underfull \vbox (badness 1448) has occurred while \output is active []
 
  [22]
-[23] [24] <sc1.png, id=459, 755.07094pt x 472.76625pt>
+[23] [24] <sc1.png, id=460, 755.07094pt x 472.76625pt>
 File: sc1.png Graphic file (type png)
  <use sc1.png>
 Package pdftex.def Info: sc1.png used on input line 299.
@@ -1192,18 +1191,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15370 strings out of 493634
- 226920 string characters out of 3134423
- 418009 words of memory out of 3000000
- 18142 multiletter control sequences out of 15000+200000
- 92036 words of font info for 125 fonts, out of 3000000 for 9000
+ 15419 strings out of 493634
+ 228006 string characters out of 3134423
+ 420204 words of memory out of 3000000
+ 18189 multiletter control sequences out of 15000+200000
+ 92119 words of font info for 126 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 44i,21n,40p,3171b,3128s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,21n,40p,3171b,3129s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ec.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-rm.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathsy.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/f
-onts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX
+/dvips/lm/lm-mathit.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-rm.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX
  2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Herbert/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/Herbert/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Herbert/AppData/Loc
@@ -1211,21 +1210,23 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Herbert/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Herbert/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/H
 erbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/U
-sers/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12
+sers/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb>
+<C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10
 .pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
-lmr6.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmr8.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmri10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmsy10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmtt10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Herbert/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Herb
-ert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (47 pages, 558181 bytes).
+lmr12.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr6.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmr8.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmri10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy10.pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Herbert/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Herbert/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Herbert/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users
+/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+
+Output written on Thesistekst.pdf (47 pages, 559955 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
+ 681 PDF objects out of 1000 (max. 8388607)
  230 named destinations out of 1000 (max. 500000)
  22179 words of extra memory for PDF output out of 24883 (max. 10000000)
 
