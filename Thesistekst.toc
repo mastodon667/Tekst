@@ -19,7 +19,7 @@
 \contentsline {paragraph}{Andere systemen}{3}{section*.10}
 \contentsline {paragraph}{Vergelijking met andere systemen}{3}{section*.11}
 \contentsline {section}{\numberline {1.1}Probleemstelling}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Doel}{5}{section.1.2}
+\contentsline {section}{\numberline {1.2}Doel}{6}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Conflict Explanation}{7}{subsection.1.2.1}
 \contentsline {paragraph}{Reified Constraints}{7}{section*.12}
 \contentsline {paragraph}{Eindige toestandsautomaten en CSP's}{8}{section*.13}
@@ -43,27 +43,26 @@
 \contentsline {paragraph}{Strategie 1b}{18}{section*.20}
 \contentsline {paragraph}{Strategie 2}{19}{section*.21}
 \contentsline {section}{\numberline {3.3}Conflict Explanation}{20}{section.3.3}
-\contentsline {subsubsection}{Unsatstructure}{21}{section*.22}
-\contentsline {subsubsection}{Reified Constraints}{21}{section*.23}
-\contentsline {subsubsection}{Genereren van oplossingen}{23}{section*.24}
-\contentsline {section}{\numberline {3.4}Front-End}{24}{section.3.4}
+\contentsline {subsubsection}{Reified Constraints}{21}{section*.22}
+\contentsline {subsubsection}{Genereren van oplossingen}{23}{section*.23}
+\contentsline {section}{\numberline {3.4}Front-End}{26}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Grafische Gebruikersinterface}{26}{subsection.3.4.1}
-\contentsline {paragraph}{Selectie venster}{26}{section*.25}
-\contentsline {paragraph}{Overzicht lessenrooster}{27}{section*.26}
+\contentsline {paragraph}{Selectie venster}{26}{section*.24}
+\contentsline {paragraph}{Overzicht lessenrooster}{27}{section*.25}
 \contentsline {subsection}{\numberline {3.4.2}Communicatie tussen Front- en Back-end}{28}{subsection.3.4.2}
 \contentsline {chapter}{\chapternumberline {4}Evaluation}{29}{chapter.4}
 \contentsline {subsection}{\numberline {4.0.1}Theorie van het ISP}{29}{subsection.4.0.1}
 \contentsline {subsection}{\numberline {4.0.2}Front-End Applicatie}{29}{subsection.4.0.2}
 \contentsline {subsection}{\numberline {4.0.3}Inferentie}{32}{subsection.4.0.3}
 \contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{32}{subsection.4.0.4}
-\contentsline {subsubsection}{Reified Constraints}{32}{section*.27}
-\contentsline {subsubsection}{Amilhastre}{33}{section*.28}
+\contentsline {subsubsection}{Reified Constraints}{32}{section*.26}
+\contentsline {subsubsection}{Amilhastre}{33}{section*.27}
 \contentsline {subsection}{\numberline {4.0.5}IDP + FSA}{33}{subsection.4.0.5}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{35}{chapter.5}
-\contentsline {paragraph}{Proof of concept}{35}{section*.29}
-\contentsline {paragraph}{Conflict explanation}{35}{section*.30}
+\contentsline {paragraph}{Proof of concept}{35}{section*.28}
+\contentsline {paragraph}{Conflict explanation}{35}{section*.29}
 \contentsline {chapter}{\chapternumberline {6}Future Work}{37}{chapter.6}
-\contentsline {chapter}{Bibliography}{39}{section*.32}
+\contentsline {chapter}{Bibliography}{39}{section*.31}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
