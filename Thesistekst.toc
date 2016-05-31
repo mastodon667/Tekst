@@ -58,13 +58,15 @@
 \contentsline {subsection}{\numberline {4.0.3}Inferentie}{32}{subsection.4.0.3}
 \contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{32}{subsection.4.0.4}
 \contentsline {subsubsection}{Reified Constraints}{32}{section*.27}
-\contentsline {subsubsection}{Amilhastre}{33}{section*.28}
-\contentsline {subsection}{\numberline {4.0.5}IDP + FSA}{33}{subsection.4.0.5}
+\contentsline {subsubsection}{Eindige toestandsautomaat}{33}{section*.28}
+\contentsline {paragraph}{Constructie}{33}{section*.29}
+\contentsline {paragraph}{Gebruik}{33}{section*.30}
+\contentsline {subsection}{\numberline {4.0.5}Evaluatie van het Configuratiesysteem}{34}{subsection.4.0.5}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{35}{chapter.5}
-\contentsline {paragraph}{Proof of concept}{35}{section*.29}
-\contentsline {paragraph}{Conflict explanation}{35}{section*.30}
+\contentsline {paragraph}{Proof of concept}{35}{section*.31}
+\contentsline {paragraph}{Conflict explanation}{35}{section*.32}
 \contentsline {chapter}{\chapternumberline {6}Future Work}{37}{chapter.6}
-\contentsline {chapter}{Bibliography}{39}{section*.32}
+\contentsline {chapter}{Bibliography}{39}{section*.34}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
