@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.24)  31 MAY 2016 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.14)  31 MAY 2016 15:51
 entering extended mode
 **./Thesistekst.tex
 (Thesistekst.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-(C:\Users\Herbert\School\KUL\Master\Thesis\TeX\tex\latex\kulemt\kulemt.cls
+(C:\Users\Herbert\School\Thesis\Tex\tex\latex\kulemt\kulemt.cls
 Document Class: kulemt 2015/05/25 v1.8 KU Leuven engineering master thesis docu
 ment class
 
@@ -24,7 +24,7 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 File: ascii.def 2015/03/17 v1.2c Input encoding file
 ))
 \kulemt@facnum=\count79
- (C:\Users\Herbert\School\KUL\Master\Thesis\TeX\tex\latex\kulemt\kulemt.cfg
+ (C:\Users\Herbert\School\Thesis\Tex\tex\latex\kulemt\kulemt.cfg
 File: kulemt.cfg 2013/05/01
 )
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\memoir\memoir.cl
@@ -498,27 +498,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 )
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype.sty"
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+Package: microtype 2016/05/01 v2.6 Micro-typographical refinements (RS)
 \MT@toks=\toks25
 \MT@count=\count140
-LaTeX Info: Redefining \textls on input line 766.
+LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen151
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count141
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype-pdftex.def"
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
+File: microtype-pdftex.def 2016/05/01 v2.6 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 916.
+LaTeX Info: Redefining \lslig on input line 916.
 \MT@outer@space=\skip185
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microt
 ype.cfg"
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+File: microtype.cfg 2016/05/01 v2.6 microtype main configuration file (RS)
 ))
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperre
 f.sty"
@@ -944,7 +943,7 @@ Package pdftex.def Info: logokuleng.pdf used on input line 37.
 
 
 {C:/Users/Herbert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
-Herbert/School/KUL/Master/Thesis/TeX/tex/latex/kulemt/logokuleng.pdf>]
+Herbert/School/Thesis/Tex/tex/latex/kulemt/logokuleng.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 37.
 
 ("C:\Users\Herbert\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
@@ -1108,7 +1107,10 @@ Package pdftex.def Info: sc1.png used on input line 322.
 ) [27] [28 <./sc1.png>]
 \openout2 = `evaluation.aux'.
 
- (evaluation.tex [29
+ (evaluation.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29
 
 
 
@@ -1117,56 +1119,45 @@ Package pdftex.def Info: sc1.png used on input line 322.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 14.
 
-
-Underfull \vbox (badness 5189) has occurred while \output is active []
-
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-[32]
-
-LaTeX Warning: Reference `tab:compilatie' on page 33 undefined on input line 63
-.
-
+[30] [31] [32]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 64.
+               Default added (so using `tbp') on input line 66.
 
 [33]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 89.
+               Default added (so using `tbp') on input line 91.
 
-) [34]
+) [34] [35]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [35
+ (conclusion.tex [36
 
 
 
-]) [36]
+] [37]) [38]
 \openout2 = `futurework.aux'.
 
  (futurework.tex)
 Underfull \vbox (badness 6078) has occurred while \output is active []
 
- [37
+ [39
 
 
 
 ]
-[38] (Thesistekst.bbl
+[40] (Thesistekst.bbl
 Underfull \hbox (badness 6396) in paragraph at lines 47--51
 []\T1/lmr/m/n/10.95 (+20) Alexander Felfer-nig, Lothar Hotz, Claire Bagley, and
  Juha Ti-iho-nen.
  []
 
-[39
+[41
 
 
 
-]) [40] [41
+]) [42] [43
 
 ]
 \tf@toc=\write5
@@ -1188,9 +1179,6 @@ Package rerunfilecheck Info: File `Thesistekst.out' has not changed.
 (rerunfilecheck)             Checksum: 1F63BD392FEB9891292CA5E1071881E7;987.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
@@ -1200,13 +1188,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15405 strings out of 493634
- 227267 string characters out of 3134423
- 413721 words of memory out of 3000000
- 18139 multiletter control sequences out of 15000+200000
+ 15454 strings out of 493634
+ 228362 string characters out of 3134423
+ 414567 words of memory out of 3000000
+ 18186 multiletter control sequences out of 15000+200000
  86905 words of font info for 128 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 44i,21n,40p,2777b,3922s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,21n,40p,2777b,3923s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ec.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-rm.enc}{C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/e
@@ -1236,9 +1224,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
 Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a
 .pfb><C:/Users/Herbert/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvet
 ic/uhvr8a.pfb>
-Output written on Thesistekst.pdf (49 pages, 597720 bytes).
+Output written on Thesistekst.pdf (51 pages, 599152 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 259 named destinations out of 1000 (max. 500000)
  20635 words of extra memory for PDF output out of 20736 (max. 10000000)
 
