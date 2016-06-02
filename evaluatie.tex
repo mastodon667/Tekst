@@ -1,0 +1,108 @@
+\chapter{Evaluatie}
+\label{cha:evaluatie}
+E\'{e}n de de doelstellingen van dit onderzoek is om na te gaan het mogelijk is een theorie te ontwikkelen in FO(\textperiodcentered) die in staat is alle om alle regels te beschrijven voor een klein domein van opleidingen van de K.U. Leuven. Met deze regels willen we natuurlijk inferentie kunnen doen, en een belangrijke vereiste van een Interactief configuratieprobleem zoals een ISP samenstellen is een snelle respons. De inferentietaken moeten dusdanig snel afgehandeld kunnen worden dat de reactietijd hooguit enkel seconden bedraagt. Deze worden getest d.m.v. een front-end applicatie met een grafische interface die verscheidene functionaliteiten aanbiedt gebaseerd op inferentie taken van het IDP systeem. Hierbij wordt ook het lessenrooster in rekening gebracht, zodat de student een overzicht heeft van het mogelijk lessenrooster dat bij diens keuze van opleidingsonderdelen hoort. En tenslotte is er nog conflict explanation, waarbij ik de mogelijkheden en prestaties van twee methodes wil onderzoeken. De eerste methode is die van reified constraints, die gebaseerd is op technieken die beschikbaar zijn binnen het IDP systeem. De tweede is de compilatie en het gebruik van een eindige toestandsautomaat, die minimale oplossingen voorziet om satisfieerbaarheid te herstellen.
+
+\subsection{Theorie van het ISP}
+Geen twee opleidingen zijn dezelfde, en toch zou het gemakkelijk zijn als ongeacht deze verschillen we telkens dezelfde set van regels kunnen gebruiken zonder daarin te moeten gaan aanpassen. Om de omvang van het project haalbaar te houden voor \'{e}\'{e}n persoon, is het domein van opleidingen beperkt gebleven tot die van de computerwetenschappen en toegepaste informatica. Hiervoor ben ik erin geslaagd en theorie op te stellen die zonder probleem eender welk van deze opleidingen kan beschrijven. Hoewel de naamgeving vaak verschilt per opleiding, komen toch vaak structuren voor die dezelfde eigenschappen vertonen. Dus de echte uitdaging is deze structuren vinden, niet de regels ervoor schrijven. Voor een klein sub-domein binnen de opleidingen van de K.U. Leuven is het dus mogelijk een theorie te vinden. 
+
+\subsection{Front-End Applicatie} 
+Het hoofddoel van de Front-End (incl. Grafische User Interface) is het simuleren van een mogelijke toekomstige applicatie die effectief gebruikt kan worden door studenten en om gemakkelijk de inferentie technieken van het IDP systeem te kunnen testen in een real-time setting. Momenteel bestaat er al een web applicatie waarmee een student een ISP kan samenstellen. Deze kan als maatstaf dienen in de beoordeling van het nieuwe systeem. Er kan namelijk pas gesproken worden van vooruitgang als de nieuwe toepassing betere prestaties levert en uitgebreidere functionaliteit biedt ten opzichte van de reeds bestaande standaard. Hierbij ligt de focus op (i) het verschil in functionaliteiten (welke functionaliteit is aanwezig in welke applicatie?) en (ii) het niveau van ondersteuning dat ze aanbieden. Criteria zoals design en platform zullen hier niet aan bod komen aangezien deze niet tot de essentie van dit onderzoek behoren. Prestaties van de verschillende inferentie technieken staan besproken in een verder hoofdstuk. 
+
+De huidige web applicatie van de K.U. Leuven biedt een basispakket van ondersteuning aan, essentieel voor de student om zijn/haar ISP te kunnen vervolledigen. Het laat de student toe om te kiezen welke opleidingsonderdelen van de gekozen opleiding hij/zij van plan is te volgen. De selectie kan vervolgens gecontroleerd worden op correctie, m.a.w. het systeem zal nagaan of ze voldoet aan alle regels van het ISP. En als de selectie niet voldoet aan deze regels zal het systeem dit melden en tevens ook uitleg voorzien waarom de selectie niet voldoet aan de regels. Deze functionaliteiten zitten ook allemaal inbegrepen in de nieuwe applicatie, samen met nog een aantal nieuwe functies. Hiermee kan ik veilig stellen dat het aanbod van functionaliteit in mijn nieuwe applicatie zeker uitgebreider is dan dat van het huidige systeem. 
+Naast het basispakket is het ook mogelijk voor de gebruiker om een parti\"{e}le selectie verder te laten invullen door het systeem tot het een volledig geldige selectie is volgens de regels van het ISP, het is zelfs mogelijk om een optimaal ISP te laten opstellen volgens een bepaald criterium. Gedurende het selectieproces is het mogelijk dat de keuzes van gebruiker ervoor zorgen dat bepaalde opleidingsonderdelen geselecteerd moeten worden als een gevolg hiervan, het systeem zal deze keuzes automatisch invullen (propageren) zodat de gebruiker zich hier geen zorgen over moet maken. Elke nieuwe stap in het selectieproces wordt bijgehouden in een geschiedenis van acties, als de gebruiker niet tevreden is met de selectie en deze wil wissen dan kan dit door de acties ongedaan te maken. Wanneer de student een vak selecteert dan zal het systeem een partieel lessenrooster genereren, dit is handig om te controleren of mogelijk geen lesmomenten overlappen met elkaar. 
+
+\begin{table}[]
+\centering
+\caption{Functionaliteiten}
+\label{functionaliteiten}
+\begin{tabular}{|l|c|c|}
+\hline
+ & Web applicatie & Nieuwe applicatie \\ \hline
+Handmatige selectie & \checkmark & \checkmark \\ \hline
+Controle correctheid & \checkmark & \checkmark \\ \hline
+Verklaring v. incorrectheid & \checkmark & \checkmark \\ \hline
+ISP genereren &  & \checkmark \\ \hline
+Optimaal ISP genereren &  & \checkmark \\ \hline
+Propagatie &  & \checkmark \\ \hline
+Ongedaan maken & \checkmark & \checkmark \\ \hline
+Geschiedenis v. Acties &  & \checkmark \\ \hline
+Weergave lessenrooster &  & \checkmark \\ \hline
+\end{tabular}
+\end{table}
+
+Er is dus een duidelijk verschil in het aanbod van functionaliteiten, maar de voordelen van deze nieuwe mogelijkheden mogen niet te koste gaan van het niveau van ondersteuning dat de functionaliteiten van het bestaande systeem bieden. Elke functionaliteit van het nieuwe systeem wordt beschreven en eventueel vergeleken met de gelijkaardige functionaliteit uit de web applicatie van het K.U. Loket. 
+
+Als eerste is er de handmatige selectie, wellicht de meest essenti\"{e}le van alle functionaliteiten. In beide applicaties geeft het de student de mogelijkheid om aan te vinken welke van de vakken hij/zij wenst te volgen, beide applicaties werken op dezelfde manier met uitzondering dat het in de web applicatie niet mogelijk is om aan te geven dat je niet ge\"{i}nteresseerd bent in een vak. 
+
+Zowel de bestaande als de nieuwe app kunnen een selectie controleren op geldigheid, maar de nieuwe applicatie doet dit bij elke nieuwe selectie van de student zodanig dat fouten zo snel mogelijk gedetecteerd worden. Bij de web applicatie gebeurt dit enkel wanneer de student denkt klaar te zijn en diens keuze bevestigt. 
+
+Blijkt dan dat de selectie niet geldig is volgens de regels, dan dient hier een verklaring voor gegeven te worden. Het bestaande systeem biedt duidelijke verklaringen in de zin dat het kan verklaren welke regels er niet kloppen. De duidelijkheid van de verklaringen in het nieuwe systeem is sterk afhankelijk van de IDP theorie die het gebruikt, de opmerking werd al gemaakt dat een algemene theorie niet geschikt is om de gebruiker goed te kunnen informeren i.p.v. een specifieke theorie. Het is dus mogelijk voor de nieuwe applicatie om evenveel duidelijkheid te kunnen scheppen als de web applicatie, maar dit zal sterk afhangen van de gebruikte theorie en dus ten koste zijn van andere factoren. Maar hier houdt het voor de web applicatie op, naast tekstuele verklaringen van de regels die verbroken zijn biedt het systeem geen verdere ondersteuning die de gebruiker kunnen helpen bij het oplossen van een foute selectie. De nieuwe applicatie kan opsporen in welk deel van de selectie de fout zich bevindt, en is zelfs in staat om alle mogelijk (minimale) oplossingen te tonen aan de gebruiker. 
+
+Het bijhouden van de acties gemaakt door de gebruiker in een geschiedenis is ook \'{e}\'{e}n van de nieuwe features. Voorheen was het al mogelijk om selecties ongedaan te maken door simpelweg het vinkje in de checkbox van een geselecteerd vak uit te vinken. Dit is nog altijd mogelijk maar daarbij is het ook nog eens mogelijk om de acties uit de geschiedenis ongedaan te maken. Propagaties die niet meer gelden als gevolg van acties of selecties ongedaan maken zullen getoond worden aan de student die dan kan kiezen of hij/zij deze nog wil behouden of niet. 
+
+En tenslotte kan de student een parti\"{e}le selectie verder laten vervolledigen door het systeem. Hierbij zal het systeem uiteraard de reeds gemaakte keuzes behouden en ze verder vervolledigen. De student kan aangeven als hij/zij niet ge\"{i}nteresseerd is in bepaalde vakken en bij het verder aanvullen van de selectie zal de nieuwe applicatie deze vakken niet kiezen. Niet alleen is het mogelijk om een parti\"{e}le selectie verder aan te vullen, maar de student kan als hij/zij dit wenst een optimaal ISP samen laten stellen volgens een bepaalde parameter (bv. de werklast zo gelijk mogelijk verdelen over beide semesters). 
+
+\subsection{Inferentie} 
+Met behulp van de interface kan de gebruiker een ISP samenstellen. Het is de bedoeling om de gebruiker bij te staan in dit proces, dit door gevolgen van bepaalde keuzes door te voeren, een onvolledige selectie te vervolledigen, een optimaal ISP samen te stellen volgens een bepaald criterium, foute keuzes te detecteren en de gebruiker hiervan op de hoogte te brengen etc.. En niet te vergeten, al deze processen moeten in real-time gebeuren en dus zeer snel afgehandeld kunnen worden. Binnen het domein van de opleidingen, ben ik tot de conclusie gekomen dat zowat al deze inferentie taken snel zeer snel en effici\"{e}nt uitgevoerd worden. De reactietijd, meegerekend het genereren van de IDP text file en het resultaat terug ontcijferen bedraagt in bijna alle gevallen minder dan 1 seconde. Zelfs de resultaten van minimizatie opdrachten geven goede resultaten terug met een maximale rekentijd van ongeveer 10 seconden. 
+
+/*RESULTATEN*/
+
+\subsection{Conflict Explanation} 
+Voor IC problemen is het de verantwoordelijkheid van het systeem om de gebruiker zo goed mogelijk bij te staan terwijl deze het probleem probeert op te lossen. Dit geldt zeker voor situaties waarbij de gebruiker een keuze heeft gemaakt die nooit tot een geldige oplossing kan leiden. In dit onderzoek heb ik de prestaties van twee technieken onderzocht, als eerste is er de techniek van reified constraints die enkel gebruik maakt van de inferentie taken binnen het IDP systeem. De tweede techniek is een combinatie van IDP met die van Amilhastre.
+
+\subsubsection{Reified Constraints}
+De techniek van reified constraints biedt extra informatie en kan dienen als een helpende hand om de gebruiker door het selectieproces te loodsen. Deze simpele generische manier om niet-satisfieerbare regels op te sporen en te verklaren in natuurlijke taal heeft zeker zijn voordelen. De implementatiekost ligt zeer laag, maar de functionaliteit van deze techniek is helaas ook beperkt. Door de techniek te combineren met de unsatstructure is het mogelijk om niet-satisfieerbare regels effici\"{e}nt op te sporen. En door aan elke regel een uitleg in natuurlijk taal te koppelen (deze hoeft slechts \'{e}\'{e}nmalig per regel opgesteld te worden) kan het systeem de gebruiker een beter begrijpbare ondersteuning bieden door precies te zeggen welke regel(s) er verbroken is (zijn) en te specifi\"{e}ren hoe dit zou kunnen gebeurd zijn. Maar deze uitleg is zeer statisch, dus als dezelfde regel door verschillende keuzes verbroken wordt zal de uitleg in beide gevallen dezelfde zijn. In vele gevallen is deze informatie duidelijk en specifiek genoeg, maar in de implementatie staat ook een voorbeeld vermeld waarbij de uitleg niet veel extra hulp biedt omdat de regel die ze beschrijft te algemeen is. Sinds het de bedoeling is van dit onderzoek om een zo algemeen mogelijke theorie te ontwikkelen kan de vraag gesteld worden hoe nuttig het is om deze techniek te gebruiken in combinatie met dit concept. Momenteel is de scope van opleidingen nog z\'{e}\'{e}r beperkt en zelfs dan bestaan er al regels die te algemeen zijn een duidelijk beeld te kunnen scheppen van wat er precies mis zou kunnen zijn. In een poging om de theorie nog algemener te maken zodat nog meer opleidingen beschreven kunnen worden, bleken de regels zo algemeen te worden dat een beschrijving in natuurlijke taal niet langer nuttig was. Dus waarschijnlijk zal er een afweging moeten gemaakt worden tussen een algemene theorie die zoveel mogelijk opleidingen kan beschrijven of duidelijke uitleg kunnen bieden ten koste van de uitdrukkingskracht van de theorie.
+
+\subsubsection{Eindige toestandsautomaat}
+\paragraph{Constructie}
+Een tweede vorm van conflict explanation in dit werk is het voorzien van oplossingen, oftewel precisie minimale subsets die ongedaan dienen gemaakt te worden om satisfieerbaarheid te herstellen. Om dit te bereiken heb ik mij gebaseerd op het werk van \citep{amilhastre2002consistency}. Het gebruik van de automaat laat toe om deze oplossingen te berkerenen. Deze automaat moet op voorhand \'{e}\'{e}nmaal berekend worden, waarna ze bewaard wordt om eender wanneer te kunnen gebruiken. Het is mogelijk om de automaat te construeren met behulp van model expansie, waarbij IDP alle modellen berekent en opsomt. De bouw van de automaat gebeurt in verschillende stappen. 
+\begin{enumerate}
+\item Alle modellen worden opgesomd d.m.v. model expansie in IDP
+\item De modellen worden vertaald naar een formaat dat nodig is om een automaat mee te bouwen.
+\item Een automaat wordt gebouwd \ref{alg:fsaConstructie}.
+\item De automaat wordt herleid tot een minimale automaat m.b.v. het algoritme van Hopcroft.
+\end{enumerate}
+In de tabel \ref{tab:compilatie} staan de resultaten van de bouw van twee automaten voor de opleidingen master toegepaste informatica en master computerwetenschappen. De tijd die nodig is voor de constructie is redelijk gezien zo op voorhand gebeurt en slechts \'{e}\'{e}nmaal uitgevoerd moet worden.
+\begin{table}[]
+\centering
+\caption{Resultaten compilatie}
+\label{tab:compilatie}
+\begin{tabular}{|l|l|l|}
+\hline
+ & Toegepaste Informatica & Computerwetenschappen \\ \hline
+1 &  &  \\ \hline
+2 &  &  \\ \hline
+3 &  &  \\ \hline
+4 &  &  \\ \hline
+Totaal: &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\paragraph{Gebruik}
+Gebruik makend van deze automaat worden de oplossingen berekend,  het berekenen van deze oplossingen kan gedaan worden in tijd polynomiaal met betrekking tot de grootte van het resultaat. De prestaties van deze techniek voor het ISP probleem zijn te zien in /*REF TABLE*/. Naast het berekenen van oplossingen zijn er nog andere inferentie technieken mogelijk op basis van de automaat, maar deze worden niet toegepast in dit onderzoek.
+
+\subsection{Evaluatie van het Configuratiesysteem}
+In de introductie werd er verwezen naar het werk van \citep{van2016kb}, en meer specifiek naar de gebruikte evaluatiemethode. IDP werd ge\"{e}valueerd volgens negen criteria uit \citep{felfernig2014knowledge} die bedoeld zijn om een beter beeld te geven van de prestaties van configuratiesystemen. IDP bleek te voldoen aan de meeste van criteria, en in een vergelijking met tien andere bekende configuratiesystemen kwam IDP als een van de sterkste systeem uit de bus. 
+
+Nemen we even terug criterium (C3) \textit{Automated Consistency Maintenance}, oftewel de aanwezigheid van een manier om consistentie te onderhouden tijdens het ontwikkelen van de theorie (a priori) zowel als gedurende het selectieproces (runtime). Het IDP systeem heeft hier slechts parti\"{e}le ondersteuning voor. A priori is automated consistency maintenancy volledig ondersteund, en in theorie ook gedurende het selectieproces. Maar door computationele beperkingen is dit sterk afhankelijk van de omvang van het probleem. Als alternatief kan er beroep gedaan worden op benaderingen, maar die hebben helaas niet dezelfde garanties. 
+
+De methode volgens Amilhastre heeft een aantal garanties, waaronder ook consistency maintenance. De kost van een selecties toevoegen of ongedaan maken is lineair met betrekking tot de grootte van de automaat. Hoewel deze grootte in het slechtste geval exponentieel is, is de grootte in de praktijk echter redelijk. Dit heeft twee redenen, in geval van IC problemen zijn veel van de domeinwaarden onderling verwisselbaar en is de structuur van een probleem opgedeeld in subproblemen die min of meer onafhankelijk zijn van elkaar. De garantie van deze eigenschap is belangrijk, omdat het toevoegen van selecties en het verwijderen ervan rechtstreeks in verband staat met consistency maintenance. Door het toevoegen of verwijderen van selecties worden de kosten van de paden in de automaat aangepast (in tijd lineair m.b.t. de grootte ervan). Controleren of een selectie satisfieerbaar is (in deze context consistency maintenance genoemd) wordt gedaan op basis van deze kost en heeft een complexiteit van \textit{O(1)}. De combinatie van de twee zorgt er dus voor dat voldaan wordt aan voorwaarde C3. 
+
+\begin{table}[]
+\centering
+\caption{IDP vs IDP+FSA}
+\label{criteria}
+\begin{tabular}{|l|c|c|}
+\hline
+ & IDP & IDP + FSA \\ \hline
+C1 & - & - \\ \hline
+C2 & $\checkmark$ & $\checkmark$ \\ \hline
+C3 & $\approx$ & $\checkmark$ \\ \hline
+C4 & $\checkmark$ & $\checkmark$ \\ \hline
+C5 & $\checkmark$ & $\checkmark$ \\ \hline
+C6 & $\checkmark$ & $\checkmark$ \\ \hline
+C7 & $\approx$ & $\approx$ \\ \hline
+C8 & $\checkmark$ & $\checkmark$ \\ \hline
+C9 & $\checkmark$ & $\checkmark$ \\ \hline
+\end{tabular}
+\end{table}

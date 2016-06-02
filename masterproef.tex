@@ -1,0 +1,98 @@
+\documentclass[master=mti,masteroption=ai]{kulemt}
+\setup{title={The ISP Course Selection Puzzle},
+  author={Herbert Gorissen},
+  promotor={Prof. Gerda Janssens},
+  assessor={Prof. Danny De Schreye \and Prof. Bettina Berendt},
+  assistant={Matthias van der Hallen}}
+% De volgende \setup mag verwijderd worden als geen fiche gewenst is.
+\setup{filingcard,
+  translatedtitle={The ISP Course Selection Puzzle},
+  udc=621.3,
+  shortabstract={In dit onderzoek worden de mogelijkheden van het IDP systeem getest voor een specifiek probleem namelijk het ISP probleem. Hierbij moet de student een opleiding zien samen te stellen door te kiezen uit de verschillende mogelijke opleidingsonderdelen voor de door hem/haar gekozen opleiding. Het ISP probleem behoort tot de klasse van interactieve configuratieproblemen, hierbij hoort het systeem de gebruiker te ondersteunen terwijl deze een geldige oplossing probeert samen te stellen. IDP als kennisbank systeem laat toe om verschillende vormen van inferentie uit te voeren zonder de kennis over een probleem opnieuw te moeten formuleren. Deze inferentie technieken kunnen de student bijstaan tijdens het samenstellen van diens ISP. De gebruiker kan tijdens deze selectieprocedure foute selecties maken die niet geldig zijn volgens de regels. Conflict explanation is de term die gebruikt wordt voor technieken de verklaringen zoeken voor conflicten. In deze thesis wordt gekeken hoe goed sommige van deze technieken het doen.}
+}
+\setup{font=lm}
+
+\usepackage[pdfusetitle,colorlinks=false,plainpages=false,hidelinks]{hyperref}
+\usepackage{natbib}
+\usepackage{ulem}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+
+\bibliographystyle{plainnat}
+\setcitestyle{authoryear}
+
+\begin{document}
+
+\begin{preface}
+  
+\end{preface}
+
+\tableofcontents*
+
+\begin{abstract}
+Bij de start van een opleiding aan de K.U. Leuven is iedere toekomstige student verplicht zijn of haar opleiding samen te stellen uit een hele waaier aan opleidingsonderdelen. De selectie van opleidingsonderdelen is echter onderworpen aan een set van regels die allemaal voldaan moeten zijn wil de student een geldig individueel studieprogramma (ISP) bekomen. We kunnen dit scenario onderbrengen in een specifieke verzameling van problemen, namelijk interactieve configuratieproblemen. Een gebruiker, in dit geval de student is verantwoordelijk voor het kiezen van waarden uit het domein voor de verschillende variabelen. Het systeem is tegelijk verantwoordelijk voor de ondersteuning van de gebruiker gedurende dit proces, zodanig dat de selectie uiteindelijk een geldige oplossing vormt volgens de regels van de theorie. 
+
+In dit onderzoek ligt de focus op IDP, een kennisbank systeem ontwikkeld aan de K.U. Leuven dat toelaat domein specifieke kennis uit te drukken d.m.v. FO(\textperiodcentered) in wat de \textit{theorie} van het probleem genoemd wordt. Met deze kennis kan het bijhorende IDP systeem verscheidene vormen van inferentie toepassen op de theorie. Met inferentie wordt bedoeld vragen over het probleem oplossen. Door deze opsplitsing is de vorm van inferentie niet langer gebonden aan het systeem. IDP is in staat om verschillende soorten vragen over het probleem te beantwoorden zonder dat de kennis erover herschreven moet worden.
+
+Sinds het ontstaan van IDP zijn er reeds verschillende onderzoeken gedaan naar de prestaties van IDP op grote problemen \citep{van2016kb} \citep{vlaeminck2009logical}. De resultaten hiervan zijn positief, en onderzoek zal moeten uitwijzen of dit voor het ISP probleem ook het geval is.
+
+Er bestaat al een web applicatie die de studenten bijstaat tijdens het selectieproces van hun opleidingsonderdelen. Door gebruik te maken van de verschillende vormen van inferentie uit het IDP systeem, ben ik ervan overtuigd een applicatie te kunnen ontwikkelen die betere ondersteuning kan bieden en meer mogelijkheden heeft. 
+
+Naast dit alles heeft deze thesis nog een andere grote doelstelling. Sinds een gebruiker verantwoordelijk is voor de selectie van waarden uit het domein, is het mogelijk dat bepaalde combinaties van keuzes nooit een geldige oplossing kunnen zijn volgens de regels. Conflict Explanation is een sub-domein binnen interactieve configuratie waar de focus ligt op het proberen verklaring van deze ongeldige selecties oftewel conflicten. En het is mijn doel om de mogelijkheden van hieromtrent IDP te testen en daarnaast op zoek te gaan naar andere methoden die aan IDP kunnen bijdragen.
+\end{abstract}
+
+% Een lijst van figuren en tabellen is optioneel
+%\listoffigures
+%\listoftables
+% Bij een beperkt aantal figuren en tabellen gebruik je liever het volgende:
+%\listoffiguresandtables
+% De lijst van symbolen is eveneens optioneel.
+% Deze lijst moet wel manueel aangemaakt worden, bv. als volgt:
+%\chapter{Lijst van afkortingen en symbolen}
+%\section*{Afkortingen}
+%\begin{flushleft}
+%  \renewcommand{\arraystretch}{1.1}
+%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+%    IDP  & Imperative/Declarative Programming \\
+%    ISP  & Individueel Studieprogramma \\
+%    ASP  & Answer Set Programming \\
+%    CSP  & Constraint Satisfaction Problem \\
+%    IC   & Interactief Configuratieprobleem \\
+%  \end{tabularx}
+%\end{flushleft}
+%\section*{Symbolen}
+%\begin{flushleft}
+%  \renewcommand{\arraystretch}{1.1}
+%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+%    $c$   & Lichtsnelheid \\
+%    $E$   & Energie \\
+%    $m$   & Massa \\
+%    $\pi$ & Het getal pi \\
+%  \end{tabularx}
+%\end{flushleft}
+
+% Nu begint de eigenlijke tekst
+\mainmatter
+
+\include{inleiding}
+\include{gerelateerdwerk}
+\include{implementatie}
+\include{evaluatie}
+\include{besluit}
+\include{toekomstigwerk}
+
+\backmatter
+% Na de bijlagen plaatst men nog de bibliografie.
+% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere.
+\bibliographystyle{abbrv}
+\bibliography{referenties}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

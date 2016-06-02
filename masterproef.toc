@@ -1,0 +1,82 @@
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\contentsline {chapter}{Voorwoord}{i}{chapter*.1}
+\contentsline {chapter}{Samenvatting}{iii}{chapter*.2}
+\contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.1}
+\contentsline {subsection}{\numberline {1.0.1}Constraint Satisfaction Problems}{1}{subsection.1.0.1}
+\contentsline {subsection}{\numberline {1.0.2}Interactive Configuration Problems}{1}{subsection.1.0.2}
+\contentsline {subsection}{\numberline {1.0.3}Declaratieve Systemen}{2}{subsection.1.0.3}
+\contentsline {paragraph}{Het IDP Systeem}{2}{section*.3}
+\contentsline {paragraph}{Andere systemen}{3}{section*.4}
+\contentsline {paragraph}{Vergelijking met andere systemen}{3}{section*.5}
+\contentsline {section}{\numberline {1.1}Probleemstelling}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Doel}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Conflict Explanation}{7}{subsection.1.2.1}
+\contentsline {paragraph}{Reified Constraints}{8}{section*.6}
+\contentsline {paragraph}{Eindige toestandsautomaten en CSP's}{8}{section*.7}
+\contentsline {section}{\numberline {1.3}Dependencies}{9}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Gerelateerd Werk}{11}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Implementatie}{13}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Inleiding}{13}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}Constructie ISP Theorie}{13}{section.3.1}
+\contentsline {paragraph}{Analyse van het ISP}{13}{section*.8}
+\contentsline {subsection}{\numberline {3.1.1}Vocabularium}{14}{subsection.3.1.1}
+\contentsline {subsubsection}{Types}{14}{section*.9}
+\contentsline {subsubsection}{Predicaten}{15}{section*.10}
+\contentsline {subsubsection}{Functies}{16}{section*.11}
+\contentsline {section}{\numberline {3.2}Lessenrooster}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Vocabularium}{16}{subsection.3.2.1}
+\contentsline {subsubsection}{Types}{16}{section*.12}
+\contentsline {subsubsection}{Predicaten}{17}{section*.13}
+\contentsline {subsubsection}{Functies}{17}{section*.14}
+\contentsline {section}{\numberline {3.3}Features}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Selectieprocedure}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Propagatie}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Model Expansie}{19}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Minimizatie}{19}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Bevestigen van selectie}{20}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Ongedaan Maken}{20}{subsection.3.3.6}
+\contentsline {paragraph}{Strategie 1a}{20}{section*.15}
+\contentsline {paragraph}{Strategie 1b}{20}{section*.16}
+\contentsline {paragraph}{Strategie 2}{21}{section*.17}
+\contentsline {section}{\numberline {3.4}Conflict Explanation}{22}{section.3.4}
+\contentsline {subsubsection}{Unsatstructure}{23}{section*.18}
+\contentsline {subsubsection}{Reified Constraints}{23}{section*.19}
+\contentsline {subsubsection}{Genereren van correcties}{25}{section*.20}
+\contentsline {paragraph}{Constructie van de automaat}{26}{section*.21}
+\contentsline {paragraph}{Gebruik van de automaat}{26}{section*.22}
+\contentsline {section}{\numberline {3.5}Front-End}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Grafische Gebruikersinterface}{28}{subsection.3.5.1}
+\contentsline {paragraph}{Selectie venster}{28}{section*.23}
+\contentsline {paragraph}{Overzicht lessenrooster}{29}{section*.24}
+\contentsline {subsection}{\numberline {3.5.2}Communicatie tussen Front- en Back-end}{29}{subsection.3.5.2}
+\contentsline {chapter}{\chapternumberline {4}Evaluatie}{31}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Theorie van het ISP}{31}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Front-End Applicatie}{32}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Inferentie}{34}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}Conflict Explanation}{34}{subsection.4.0.4}
+\contentsline {subsubsection}{Reified Constraints}{34}{section*.25}
+\contentsline {subsubsection}{Eindige toestandsautomaat}{35}{section*.26}
+\contentsline {paragraph}{Constructie}{35}{section*.27}
+\contentsline {paragraph}{Gebruik}{35}{section*.28}
+\contentsline {subsection}{\numberline {4.0.5}Evaluatie van het Configuratiesysteem}{36}{subsection.4.0.5}
+\contentsline {chapter}{\chapternumberline {5}Besluit}{39}{chapter.5}
+\contentsline {paragraph}{Proof of concept}{39}{section*.29}
+\contentsline {paragraph}{Conflict explanation}{39}{section*.30}
+\contentsline {chapter}{\chapternumberline {6}Toekomstig Werk}{41}{chapter.6}
+\contentsline {chapter}{Bibliografie}{43}{section*.32}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
